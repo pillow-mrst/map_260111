@@ -1,12 +1,5 @@
-#explore {
-    margin: auto;
-    width: 340px;
-    height: 35px;
-    text-align: right;
-}
-
-#field {
-    width: 130px;;
+body {
+    margin-top: 0;
 }
 
 .match {
@@ -14,19 +7,65 @@
     color: red;
 }
 
+.fav {
+    background-color: orange;
+}
+
+
+#header {
+    margin: auto;
+    padding-top: 7px;
+    width: 350px;
+    height: 35px;
+    top: 0;
+    background-color: white;
+    position: sticky;
+}
+
+#reset {
+    margin-left: 7px;
+    margin-right: 7px;
+    float: left;
+}
+
+#accounting {
+    margin-left: 7px;
+    margin-right: 7px;
+    float: left;
+}
+
+#explore {
+    text-align: right;
+}
+
+#field {
+    width: 130px;;
+}
+
+/*
 .container {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
 }
+*/
 
-table {
+.container {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.tbl {
     border-collapse: collapse;
     margin-left: 15px;
     margin-right: 15px;
 }
 
 .nothing {
+    width: 30px;
+    height: 30px;
     visibility:hidden;
 }
 
@@ -39,8 +78,8 @@ table {
 
 .booth, .empty {
     border: solid 1px black;   /*実線 1px 黒*/
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     text-align: center;
 }
 
@@ -64,6 +103,7 @@ table {
     display: none;
 }
 
+/* pタグのflexによるズレ調整 */
 p {
     margin: 0;
     padding: 0;
@@ -87,42 +127,23 @@ p {
     text-align: center;
 }
 
-/* 別ページ*/
 .link {
     text-align: center;
 }
 
-#list {
-    margin: auto;
-    margin-top: 20px;
-    max-width: 360px;
+/* ポップアップ関連 */
+#menu_img {
+    padding-top: 5dvh;
+    padding-left: 4%;
+    padding-right: 4%;
+    max-width: 92%;
+    height: 470px;
+    object-fit: contain;
 }
 
-#resume {
-    border: dashed 2px black;
-    max-width: 360px;
-    margin: auto;
-    margin-top: 40px;
-    padding: 10px;
+#pages {
+    text-align: center;
 }
-
-.update {
-    text-decoration: underline;
-}
-
-dl{
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-dt{
-    float:left;
-}
-dd{
-    margin-left:80px;
-}
-
 
 .back, .go {
     padding-left: 20px;
@@ -137,26 +158,42 @@ dd{
     padding-left: 5px;
 }
 
-
-#menu_img {
-    padding-top: 5dvh;
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 90%;
-    max-height: 90%;
+#goods_list {
+    margin-top: 5dvh;
+    margin-left: 4%;
+    margin-right: 4%;
+    height: 470px;
+    border: solid 1px ;
+    overflow-y: auto;
     object-fit: contain;
 }
 
-#pages {
-    text-align: center;
+.item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-bottom: solid 1px silver;
 }
+
+/*
+.goods_name {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+*/
+
+.select {
+    background-color: lightsteelblue;
+}
+
 
 .mfp-content {
     background-color: #FFF;
     max-width: 360px;
 }
 
-#close_div {
+.close_div {
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;

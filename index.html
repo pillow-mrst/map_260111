@@ -6,43 +6,113 @@
   <title>ブース情報</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--CSS読み込み-->
-  <!--onloadのところは変数なので、これで大丈夫-->
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
   <!--
     "./main.css"
   -->
-  <link rel="stylesheet" href="https://pillow-mrst.github.io/map_250504/main.css">
-  </head>
+  <link rel="stylesheet" href="https://pillow-mrst.github.io/map_260111/main.css">
+</head>
 <body>
-  <div id="explore">
-    <input type="search" id="field" name="field" placeholder="キーワードを入力">
-    <button type="button" id="search">検索</button>
-  </div>
+  <header id="header">
+    <p id="reset">
+      <button type="button" id="clear">★リセット</button>
+    </p>
+    <p id="accounting">
+      <button type="button" id="pay">お会計</button>
+    </p>
+    <p id="explore">
+      <input type="search" id="field" name="field" placeholder="キーワードを入力">
+      <button type="button" id="search">検索</button>
+    </p>
+  </header>
   <div class="container">
     <table class="tbl">
       <div class="top">
         <tr>
-          <td id="し09" class="another">9</td>
-          <td id="く28" class="another">28</td>
-        </tr>
-        <tr>
           <td class="nothing"></td>
+          <td class="nothing"></td>
+          <td class="nothing"></td>
+          <td class="nothing"></td>
+          <td class="nothing"></td>
+          <td id="あ11" class="booth">11</td>
+          <td id="あ10" class="booth">10</td>
+          <td id="あ09" class="booth">09</td>
+          <td id="あ08" class="booth">08</td>
+          <td class="nothing"></td>
+          <td id="あ07" class="booth">07</td>
+        </tr>
+
+        <div>
+          <tr class="aisle_h"></tr>
+        </div>
+
+        <tr>
+          <td id="か19" class="empty" colspan="2">×</td>
+          <td class="nothing"></td>
+          <td id="お47" class="booth" colspan="2">47</td>
         </tr>
         <tr>
-          <td id="F57" class="booth" colspan="2">57</td>
+          <td id="か20" class="empty">×</td>
+          <td id="か18" class="empty">×</td>
+          <td class="nothing"></td>
+          <td id="お48" class="booth">48</td>
+          <td id="お46" class="empty">×</td>
         </tr>
         <tr>
-          <td id="F58" class="booth">58</td>
-          <td id="F56" class="booth">56</td>
+          <td id="か21" class="empty">×</td>
+          <td id="か17" class="booth">17</td>
+          <td class="nothing"></td>
+          <td id="お49" class="booth">49</td>
+          <td id="お45" class="empty">×</td>
         </tr>
         <tr>
-          <td id="F59" class="booth">59</td>
-          <td id="F55" class="booth">55</td>
+          <td id="か22" class="empty">×</td>
+          <td id="か16" class="booth">16</td>
+          <td class="nothing"></td>
+          <td id="お50" class="booth">50</td>
+          <td id="お44" class="empty">×</td>
         </tr>
         <tr>
-          <td class="empty">×</td>
-          <td class="empty">×</td>
+          <td id="か23" class="empty">×</td>
+          <td id="か15" class="booth">15</td>
+          <td class="nothing"></td>
+          <td id="お51" class="booth">51</td>
+          <td id="お43" class="empty">×</td>
+        </tr>
+        <tr>
+          <td id="か24" class="empty">×</td>
+          <td id="か14" class="booth">14</td>
+          <td class="nothing"></td>
+          <td id="お52" class="booth">52</td>
+          <td id="お42" class="empty">×</td>
+        </tr>
+        <tr>
+          <td id="か25" class="empty">×</td>
+          <td id="か13" class="booth">13</td>
+          <td class="nothing"></td>
+          <td id="お53" class="booth">53</td>
+          <td id="お41" class="empty">×</td>
+        </tr>
+        <tr>
+          <td id="か26" class="empty">×</td>
+          <td id="か12" class="booth">12</td>
+          <td class="nothing"></td>
+          <td id="お54" class="booth">54</td>
+          <td id="お40" class="empty">×</td>
+        </tr>
+        <tr>
+          <td id="か27" class="empty">×</td>
+          <td id="か11" class="booth">11</td>
+          <td class="nothing"></td>
+          <td id="お55" class="booth">55</td>
+          <td id="お39" class="empty">×</td>
+        </tr>
+        <tr>
+          <td id="か10" class="booth" colspan="2">10</td>
+          <td class="nothing"></td>
+          <td id="お38" class="empty" colspan="2">×</td>
         </tr>
       </div>
 
@@ -52,217 +122,70 @@
 
       <div class="bottom">
         <tr>
-          <td class="empty">×</td>
-          <td class="empty">×</td>
+          <td id="か28" class="empty" colspan="2">×</td>
+          <td class="nothing"></td>
+          <td id="お56" class="booth" colspan="2">56</td>
         </tr>
         <tr>
-          <td id="F60" class="booth">60</td>
-          <td id="F54" class="booth">54</td>
+          <td id="か29" class="empty">×</td>
+          <td id="か09" class="booth">09</td>
+          <td class="nothing"></td>
+          <td id="お57" class="booth">57</td>
+          <td id="お37" class="empty">×</td>
         </tr>
         <tr>
-          <td id="F61" class="booth">61</td>
-          <td id="F53" class="booth">53</td>
+          <td id="か30" class="empty">×</td>
+          <td id="か08" class="booth">08</td>
+          <td class="nothing"></td>
+          <td id="お58" class="booth">58</td>
+          <td id="お36" class="empty">×</td>
         </tr>
         <tr>
-          <td id="F62" class="booth">62</td>
-          <td id="F52" class="booth">52</td>
+          <td id="か31" class="empty">×</td>
+          <td id="か07" class="booth">07</td>
+          <td class="nothing"></td>
+          <td id="お59" class="booth">59</td>
+          <td id="お35" class="empty">×</td>
         </tr>
         <tr>
-          <td id="F63" class="booth">63</td>
-          <td id="F51" class="booth">51</td>
+          <td id="か32" class="empty">×</td>
+          <td id="か06" class="booth">06</td>
+          <td class="nothing"></td>
+          <td id="お60" class="booth">60</td>
+          <td id="お34" class="empty">×</td>
         </tr>
         <tr>
-          <td class="empty">×</td>
-          <td id="F50" class="booth">50</td>
+          <td id="か33" class="empty">×</td>
+          <td id="か05" class="booth">05</td>
+          <td class="nothing"></td>
+          <td id="お61" class="booth">61</td>
+          <td id="お33" class="empty">×</td>
         </tr>
         <tr>
-          <td id="F49" class="booth" colspan="2">49</td>
-        </tr>
-      </div>
-    </table>
-
-    <table class="tbl">
-      <div class="top">
-        <tr>
-          <td id="F37" class="booth" colspan="2">37</td>
+          <td id="か34" class="empty">×</td>
+          <td id="か04" class="booth">04</td>
+          <td class="nothing"></td>
+          <td id="お62" class="booth">62</td>
+          <td id="お32" class="empty">×</td>
         </tr>
         <tr>
-          <td id="F38" class="booth">38</td>
-          <td id="F36" class="booth">36</td>
+          <td id="か35" class="empty">×</td>
+          <td id="か03" class="booth">03</td>
+          <td class="nothing"></td>
+          <td id="お63" class="booth">63</td>
+          <td id="お31" class="empty">×</td>
         </tr>
         <tr>
-          <td id="F39" class="booth">39</td>
-          <td id="F35" class="booth">35</td>
+          <td id="か36" class="empty">×</td>
+          <td id="か02" class="booth">02</td>
+          <td class="nothing"></td>
+          <td id="お64" class="booth">64</td>
+          <td id="お30" class="empty">×</td>
         </tr>
         <tr>
-          <td id="F40" class="booth">40</td>
-          <td id="F34" class="booth">34</td>
-        </tr>
-        <tr>
-          <td id="F41" class="booth">41</td>
-          <td id="F33" class="booth">33</td>
-        </tr>
-        <tr>
-          <td id="F42" class="booth">42</td>
-          <td id="F32" class="booth">32</td>
-        </tr>
-      </div>
-
-      <div>
-        <tr class="aisle_h"></tr>
-      </div>
-
-      <div class="bottom">
-        <tr>
-          <td id="F43" class="booth">43</td>
-          <td id="F31" class="booth">31</td>
-        </tr>
-        <tr>
-          <td id="F44" class="booth">44</td>
-          <td id="F30" class="booth">30</td>
-        </tr>
-        <tr>
-          <td id="F45" class="booth">45</td>
-          <td id="F29" class="booth">29</td>
-        </tr>
-        <tr>
-          <td id="F46" class="booth">46</td>
-          <td id="F28" class="booth">28</td>
-        </tr>
-        <tr>
-          <td id="F47" class="booth">47</td>
-          <td id="F27" class="booth">27</td>
-        </tr>
-        <tr>
-          <td id="F48" class="booth">48</td>
-          <td id="F26" class="booth">26</td>
-        </tr>
-        <tr>
-          <td id="F25" class="booth" colspan="2">25</td>
-        </tr>
-      </div>
-    </table>
-
-    <table class="tbl">
-      <div class="top">
-        <tr>
-          <td id="F13" class="booth" colspan="2">13</td>
-        </tr>
-        <tr>
-          <td id="F14" class="booth">14</td>
-          <td id="F12" class="booth">12</td>
-        </tr>
-        <tr>
-          <td id="F15" class="booth">15</td>
-          <td id="F11" class="booth">11</td>
-        </tr>
-        <tr>
-          <td id="F16" class="booth">16</td>
-          <td id="F10" class="booth">10</td>
-        </tr>
-        <tr>
-          <td id="F17" class="booth">17</td>
-          <td id="F09" class="booth">9</td>
-        </tr>
-        <tr>
-          <td id="F18" class="booth">18</td>
-          <td id="F08" class="booth">8</td>
-        </tr>
-      </div>
-
-      <div>
-        <tr class="aisle_h"></tr>
-      </div>
-
-      <div class="bottom">
-        <tr>
-          <td id="F19" class="booth">19</td>
-          <td id="F07" class="booth">7</td>
-        </tr>
-        <tr>
-          <td id="F20" class="booth">20</td>
-          <td id="F06" class="booth">6</td>
-        </tr>
-        <tr>
-          <td id="F21" class="booth">21</td>
-          <td id="F05" class="booth">5</td>
-        </tr>
-        <tr>
-          <td id="F22" class="booth">22</td>
-          <td id="F04" class="booth">4</td>
-        </tr>
-        <tr>
-          <td id="F23" class="booth">23</td>
-          <td id="F03" class="booth">3</td>
-        </tr>
-        <tr>
-          <td id="F24" class="booth">24</td>
-          <td id="F02" class="booth">2</td>
-        </tr>
-        <tr>
-          <td id="F01" class="booth" colspan="2">1</td>
-        </tr>
-      </div>
-    </table>
-
-    <table class="tbl">
-      <div class="top">
-        <tr>
-          <td id="E35" class="booth" colspan="2">35</td>
-        </tr>
-        <tr>
-          <td id="E36" class="booth">36</td>
-          <td id="E34" class="booth">34</td>
-        </tr>
-        <tr>
-          <td id="E37" class="booth">37</td>
-          <td id="E33" class="booth">33</td>
-        </tr>
-        <tr>
-          <td id="E38" class="booth">38</td>
-          <td id="E32" class="booth">32</td>
-        </tr>
-        <tr>
-          <td id="E39" class="booth">39</td>
-          <td id="E31" class="booth">31</td>
-        </tr>
-        <tr>
-          <td id="E40" class="booth">40</td>
-          <td id="E30" class="booth">30</td>
-        </tr>
-      </div>
-
-      <div>
-        <tr class="aisle_h"></tr>
-      </div>
-
-      <div class="bottom">
-        <tr>
-          <td id="E41" class="booth">41</td>
-          <td id="E29" class="booth">29</td>
-        </tr>
-        <tr>
-          <td id="E42" class="booth">42</td>
-          <td id="E28" class="booth">28</td>
-        </tr>
-        <tr>
-          <td id="E43" class="booth">43</td>
-          <td id="E27" class="booth">27</td>
-        </tr>
-        <tr>
-          <td id="E44" class="booth">44</td>
-          <td id="E26" class="booth">26</td>
-        </tr>
-        <tr>
-          <td id="E45" class="booth">45</td>
-          <td id="E25" class="booth">25</td>
-        </tr>
-        <tr>
-          <td id="E46" class="booth">46</td>
-          <td id="E24" class="booth">24</td>
-        </tr>
-        <tr>
-          <td id="E23" class="booth" colspan="2">23</td>
+          <td id="か01" class="booth" colspan="2">01</td>
+          <td class="nothing"></td>
+          <td id="お29" class="empty" colspan="2">×</td>
         </tr>
       </div>
     </table>
@@ -273,19 +196,23 @@
       <div class="information">
         <p class="place">(ab)</p>
         <p class="bookmark">
-          <input type="checkbox" class="favorite" name="favorite">
+          <!--
+            <input type="checkbox" class="favorite" name="favorite">
+          -->
           <span class="mark">☆</span>
         </p>
         <span>&nbsp;サークル名：</span>
         <span class="name"></span>
         <br>
-        <span>&nbsp;グッズ製作者：</span>
-        <span class="producer"></span>
+        <span>&nbsp;代表者：</span>
+        <span class="master"></span>
       </div>
       <div class="url">
-        <a class="menu popup" href="#inline-wrap">お品書き</a>
+        <a class="menu popup" href="#inline-menu">お品書き</a>
         <span class="menu_">&ensp;/&ensp;</span>
         <span><a class="goods" href="">頒布物</a></span>
+        <span class="list_">&ensp;/&ensp;</span>
+        <a class="list popup" href="#inline-list">リスト</a>
       </div>
     </div>
 
@@ -293,19 +220,23 @@
       <div class="information">
         <p class="place">(a)</p>
         <p class="bookmark">
-          <input type="checkbox" class="favorite" name="favorite">
+          <!--
+            <input type="checkbox" class="favorite" name="favorite">
+          -->
           <span class="mark">☆</span>
         </p>
         <span>&nbsp;サークル名：</span>
         <span class="name"></span>
         <br>
-        <span>&nbsp;グッズ製作者：</span>
-        <span class="producer"></span>
+        <span>&nbsp;代表者：</span>
+        <span class="master"></span>
       </div>
       <div class="url">
-        <a class="menu popup" href="#inline-wrap">お品書き</a>
+        <a class="menu popup" href="#inline-menu">お品書き</a>
         <span class="menu_">&ensp;/&ensp;</span>
         <span><a class="goods" href="">頒布物</a></span>
+        <span class="list_">&ensp;/&ensp;</span>
+        <a class="list popup" href="#inline-list">リスト</a>
       </div>
     </div>
 
@@ -313,44 +244,54 @@
       <div class="information">
         <p class="place">(a)</p>
         <p class="bookmark">
-          <input type="checkbox" class="favorite" name="favorite">
+          <!--
+            <input type="checkbox" class="favorite" name="favorite">
+          -->
           <span class="mark">☆</span>
         </p>
         <span>&nbsp;サークル名：</span>
         <span class="name"></span>
         <br>
-        <span>&nbsp;グッズ製作者：</span>
-        <span class="producer"></span>
+        <span>&nbsp;代表者：</span>
+        <span class="master"></span>
       </div>
       <div class="url">
-        <a class="menu popup" href="#inline-wrap">お品書き</a>
+        <a class="menu popup" href="#inline-menu">お品書き</a>
         <span class="menu">&ensp;/&ensp;</span>
         <span><a class="goods" href="">頒布物</a></span>
+        <span class="list_">&ensp;/&ensp;</span>
+        <a class="list popup" href="#inline-list">リスト</a>
       </div>
     </div>
-</div>
-
-<!-- クリックしたら表示される部分 -->
-<div id="inline-wrap" class="mfp-hide">
-  <div id="img_div">
-    <img id="menu_img" src="./">
   </div>
-  <div id="pages">
-    <span class="back">&lt;&lt;</span>
-    <span class="page_num">1</span>
-    <span>/</span>
-    <span class="page_all">1</span>
-    <span class="go">&gt;&gt;</span>
 
+  <!-- ポップアップ(お品書き) -->
+  <div id="inline-menu" class="mfp-hide">
+    <div id="img_div">
+      <img id="menu_img" src="./">
+    </div>
+    <div id="pages">
+      <span class="back">&lt;&lt;</span>
+      <span class="page_num">1</span>
+      <span>/</span>
+      <span class="page_all">1</span>
+      <span class="go">&gt;&gt;</span>
+    </div>
+    <div class="close_div">
+      <a class="close" href="#">閉じる</a>
+    </div>
   </div>
-  <div id="close_div">
-    <a class="close" href="#">閉じる</a>
+  <!-- ポップアップ(グッズ一覧) -->
+  <div id="inline-list" class="mfp-hide">
+    <div id="goods_list"></div>
+    <div class="close_div">
+      <a class="close" href="#">閉じる</a>
+    </div>
   </div>
-</div>
 
-<div class="link">
-  <span><a href="./description.html">使い方・更新履歴</a></span>
-</div>
+  <div class="link">
+    <span><a href="./info.html">使い方・更新履歴</a></span>
+  </div>
 
   <!--スクリプト読み込み(最初にjquery.min.js)-->
   <!--body内で使用する関数が記述されているjsならheadに記述する-->
@@ -358,10 +299,11 @@
   <script>window.jQuery || document.write('<script src="/libs/jquery.min.js"><\/script>')</script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
   <script>window.jQuery.ui || document.write('<script src="/libs/jquery-ui.min.js"><\/script>')</script>
-  <script type="text/javascript" src="/libs/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <!--
-    "./main.js"
+  "./main.js"
   -->
-  <script type="text/javascript" src="https://pillow-mrst.github.io/map_250504/main.js"></script>
+  <script type="text/javascript" src="https://pillow-mrst.github.io/map_260111/main.js"></script>
 </body>
 </html>
