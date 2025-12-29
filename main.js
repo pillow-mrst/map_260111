@@ -119,6 +119,7 @@ $('.tbl').on('click', '.booth, .another', function () {
 
     // 一旦全て非表示
     $('#ab, #a, #b').hide();
+    $('#menu_img').attr('src', './');
 
     for (let i = 0; i < label.length; i++) {
       let hall = data[i].place.slice(0,3);
@@ -164,6 +165,7 @@ $('.tbl').on('click', '.booth, .another', function () {
 
 // お品書きをクリック
 $('.club').on('click', '.menu', function () {
+
   const location  = $(this).closest('.club').find('.place').text();
   const booth = location.slice(location.indexOf(' ') + 1, location.indexOf(')')).replace('-', '');
 
