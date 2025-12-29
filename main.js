@@ -169,7 +169,8 @@ $('.club').on('click', '.menu', function () {
 
   const img_dir = './img/';
   // お品書きは1ページまでは存在
-  const img_url = img_dir + booth + '_menu1.jpg';
+  //const img_url = img_dir + booth + '_menu1.jpg';
+  const img_url = img_dir + booth + '_menu1.webp';
   $('#menu_img').attr('src', img_url);
 
   const $pages = $('#pages');
