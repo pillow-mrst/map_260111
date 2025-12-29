@@ -167,7 +167,7 @@ $('.club').on('click', '.menu', function () {
   const location  = $(this).closest('.club').find('.place').text();
   const booth = location.slice(location.indexOf(' ') + 1, location.indexOf(')')).replace('-', '');
 
-  const img_dir = './img/';
+  const img_dir = './img_webp/';
   // お品書きは1ページまでは存在
   //const img_url = img_dir + booth + '_menu1.jpg';
   const img_url = img_dir + booth + '_menu1.webp';
@@ -175,7 +175,7 @@ $('.club').on('click', '.menu', function () {
 
   const $pages = $('#pages');
   $pages.children('.page_num').text(1);
-  const page_max = circle_arr.find(c => c.place.slice(2,) === booth).menu;
+  const page_max = circle_arr.find(c => c.place.slice(3,) === booth).menu;
   $pages.children('.page_all').text(page_max);
 
   if ( page_max > 1) {
