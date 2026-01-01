@@ -35,6 +35,10 @@ body {
     text-align: right;
 }
 
+.total {
+    visibility:hidden;
+}
+
 #field {
     width: 130px;;
 }
@@ -75,8 +79,8 @@ body {
 
 .booth, .empty {
     border: solid 1px black;   /*実線 1px 黒*/
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     text-align: center;
 }
 
@@ -155,8 +159,13 @@ p {
     padding-left: 5px;
 }
 
+#accounting {
+    margin-top: 2dvh;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
 #goods_list {
-    margin-top: 5dvh;
     margin-left: 4%;
     margin-right: 4%;
     height: 470px;
@@ -170,7 +179,6 @@ p {
     padding-bottom: 5px;
     padding-left: 8px;
     padding-right: 8px;
-    border-bottom: solid 1px silver;
 }
 
 /*
@@ -179,6 +187,20 @@ p {
     padding-right: 10px;
 }
 */
+
+.goods_name {
+    text-align: left;
+}
+
+.buy_num {
+    width: 40px;
+}
+
+.goods_price {
+    text-align: right;
+    margin-right: 10px;
+    border-bottom: solid 1px silver;
+}
 
 .select {
     background-color: lightsteelblue;

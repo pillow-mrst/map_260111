@@ -10,29 +10,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
   <!--
-  "https://pillow-mrst.github.io/map_260111/main.css"
+  "./main.css"
   -->
-  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="https://pillow-mrst.github.io/map_260111/main.css">
 </head>
 <body>
-  <header id="header">
-    <p id="reset">
-      <button type="button" id="clear">★リセット</button>
-    </p>
-    <p id="explore">
+  <div id="header">
+    <div id="reset">
+      <button type="button" id="save">データ保存</button>
+      <button type="button" id="load">データ読出</button>
+    </div>
+    <div id="explore">
       <input type="search" id="field" name="field" placeholder="キーワードを入力">
       <button type="button" id="search">検索</button>
-    </p>
-  </header>
+    </div>
+  </div>
   <div class="container">
     <table class="tbl">
       <div class="top">
         <tr>
-          <td class="nothing"></td>
-          <td class="nothing"></td>
-          <td class="nothing"></td>
-          <td class="nothing"></td>
-          <td class="nothing"></td>
+          <td id="total" colspan="5">総計：<span class="payment">0</span> 円</td>
           <td id="あ11" class="booth">11</td>
           <td id="あ10" class="booth">10</td>
           <td id="あ09" class="booth">09</td>
@@ -280,6 +277,7 @@
   </div>
   <!-- ポップアップ(グッズ一覧) -->
   <div id="inline-list" class="mfp-hide">
+    <div id="accounting">お会計： <span class="payment">0</span> 円</div>
     <div id="goods_list"></div>
     <div class="close_div">
       <a class="close" href="#">閉じる</a>
@@ -299,8 +297,8 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <!--
-  "https://pillow-mrst.github.io/map_260111/main.js"
+  "./main.js"
   -->
-  <script type="text/javascript" src="./main.js"></script>
+  <script type="text/javascript" src="https://pillow-mrst.github.io/map_260111/main.js"></script>
 </body>
 </html>

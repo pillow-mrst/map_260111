@@ -4,10 +4,11 @@ let circle_arr = [];
 let goods_arr = []
 
 // ブラウザ保存用と読み出し用を共有
-let stored1 = [];
-let stored2 = {};
+let favoriteBooths = [];
+let stored2 = [];
 // おかしくなった時にリセットする用
 //localStorage.removeItem('bookmark');
+//localStorage.removeItem('purchase');
 
 $(document).ready(async function() {
   // jsonファイル読み込み
@@ -24,28 +25,55 @@ $(document).ready(async function() {
   } catch (error) {
     console.error(error.message);
   }
+});
 
-  // ブラウザ保存データ読み込み
-  if (localStorage.hasOwnProperty('bookmark')) {
-    if (localStorage.getItem('bookmark').length > 0) {
-      stored1 = localStorage.getItem('bookmark').split(',');
-      //console.log(stored1);
+// copilot未修正したい
+// データを保存
+$('#save').on('click', function () {
+  const ans = window.confirm('保存データがある場合は上書きします。\nデータを保存してもよろしいですか？');
+  if (ans) {
+    localStorage.setItem('bookmark', favoriteBooths.join(','));
+    localStorage.setItem('purchase', JSON.stringify(stored2));
 
-      // データ数0だとここでエラー出るよ
-      for (const data of stored1) {
-        let desk_id = '#' + data.slice(0, 3);
-        $('.container').find(desk_id).addClass('fav');
+    alert('データの保存が完了しました。');
+  }
+});
+
+// copilot未修正したい
+// 保存データを呼び出す
+$('#load').on('click', function () {
+  const ans = window.confirm('保存データを呼び出してもよろしいですか？');
+  if (ans) {
+    // 一旦初期化
+    const $club = $('.club');
+    $('.container').find('.booth').removeClass('fav');
+    $club.find('.favorite').prop('checked', false);
+    $club.find('.mark').text('☆').css('color', 'black');
+
+    if (localStorage.hasOwnProperty('bookmark')) {
+      if (localStorage.getItem('bookmark').length > 0) {
+        favoriteBooths = localStorage.getItem('bookmark').split(',');
+        //console.log(favoriteBooths);
+
+        // データ数0だとここでエラー出るよ
+        for (const favBooth of favoriteBooths) {
+          let desk_id = '#' + favBooth.slice(0, 3);
+          $('.container').find(desk_id).addClass('fav');
+        }
       }
     }
-  }
 
-  if (localStorage.hasOwnProperty('purchase')) {
-    stored2 = JSON.parse(localStorage.getItem('purchase') || '');
-    //console.log(stored2);
+    if (localStorage.hasOwnProperty('purchase')) {
+      stored2 = JSON.parse(localStorage.getItem('purchase') || '[]');
+      //console.log(stored2);
+    }
+
+    alert('保存したデータを呼び出しました。');
   }
 });
 
 // ブックマークをリセット
+/*
 $('#reset').on('click', function () {
   const ans = window.confirm('ブックマークを初期化しますか？');
   if (ans) {
@@ -56,201 +84,319 @@ $('#reset').on('click', function () {
       const $club = $('.club');
       $('.container').find('.booth').removeClass('fav');
       $club.find('.favorite').prop('checked', false);
-      $club.find('.mark').text('☆');
-      $club.find('.mark').css('color', 'black');
+      //$club.find('.mark').text('☆');
+      //$club.find('.mark').css('color', 'black');
+      $club.find('.mark').text('☆').css('color', 'black');
     }
   }
 });
+*/
 
 // キーワード検索を実行
 $('#search').on('click', function () {
-  const keyword = $(this).prev().val();
-  // 表示を初期化
-  $('.tbl').find('.booth, .another').removeClass('match');
-  $('.club').find('.place, .name, .master').removeClass('match');
+  const keyword = $(this).prev().val().trim();
 
-  if (keyword) {
-    circle_arr.forEach(function (v) {
-      // ホール番号は除外
-      if (v.place.slice(3,).includes(keyword) || v.name.includes(keyword) || v.master.includes(keyword)) {
-        $('.tbl').find('#' + v.place.slice(3,6)).addClass('match');
-      }
-    });
-  }
+  // --- 初期化 ---
+  $('.tbl .booth, .tbl .another').removeClass('match');
+  $('.club .place, .club .name, .club .master').removeClass('match');
+
+  if (!keyword) return;
+
+  // --- 検索処理 ---
+  circle_arr.forEach(circle => {
+    const boothId = circle.place.slice(3, 6); // 机番号（例: A01）
+
+    const isMatch =
+      circle.place.slice(3).includes(keyword) ||
+      circle.name.includes(keyword) ||
+      circle.master.includes(keyword);
+
+    if (isMatch) {
+      $(`#${boothId}`).addClass('match');
+    }
+  });
 });
 
 // お気に入り(☆)をクリック
 $('#output').on('click', '.mark', function () {
-  const location  = $(this).closest('.information').children('.place').text();
-  const desk = location.slice(location.indexOf(' ') + 1, location.indexOf('-'));
-  const desk_id = '#' + desk;
-  const booth = location.slice(location.indexOf(' ') + 1, location.indexOf(')')).replace('-', '');
 
-  $this = $(this);
-  if ($this.text() == '☆') {
-    // 要素を追加
-    stored1.push(booth);
-    $this.text('★');
-    $this.css('color', 'yellow');
-    $('.container').find(desk_id).addClass('fav');
+  const $mark = $(this);
+
+  // --- booth / deskNumber の抽出 ---
+  const placeText = $mark.closest('.information').find('.place').text();
+  const deskNumber = placeText.slice(placeText.indexOf(' ') + 1, placeText.indexOf('-'));
+  const booth = placeText.slice(placeText.indexOf(' ') + 1, placeText.indexOf(')')).replace('-', '');
+  const deskSelector = `#${deskNumber}`;
+
+  // --- お気に入り登録 or 解除 ---
+  const isFav = $mark.text() === '☆';
+
+  if (isFav) {
+    // ★ に変更（お気に入り追加）
+    favoriteBooths.push(booth);
+    $mark.text('★').css('color', 'yellow');
+    $('.container').find(deskSelector).addClass('fav');
+
   } else {
-    //要素を削除
-    stored1.some(function(v, i) {
-      if (v == booth) stored1.splice(i, 1);
-    });
+    // ☆ に変更（お気に入り削除）
+    favoriteBooths = favoriteBooths.filter(circle => circle !== booth);
 
-    $this.text('☆');
-    $this.css('color', 'black');
-    if (stored1.includes(desk + 'a') || stored1.includes(desk + 'b')) {
-      $('.container').find(desk_id).addClass('fav');
-    } else {
-      $('.container').find(desk_id).removeClass('fav');
-    }
+    $mark.text('☆').css('color', 'black');
+
+    // deskNumber + a / deskNumber + b のどちらかが残っているか判定
+    const stillFav = favoriteBooths.includes(deskNumber + 'a') || favoriteBooths.includes(deskNumber + 'b');
+    $('.container').find(deskSelector).toggleClass('fav', stillFav);
   }
-  localStorage.setItem('bookmark', stored1.join(','));
 });
 
 // ブースをクリック
 $('.tbl').on('click', '.booth, .another', function () {
-    const desk = $(this).prop('id');
-    const data = circle_arr.filter(c => c.place.includes(desk));
-    const label = data.map(d => d.place.slice(6,));
-    const $desk_id = label.map(lb => $('#' + lb));
 
-    // 一旦全て非表示
-    $('#ab, #a, #b').hide();
-    $('#menu_img').attr('src', './');
+  const deskNumber = $(this).prop('id');
+  // booth に該当するデータを取得
+  const matchedBooths = circle_arr.filter(circle => circle.place.includes(deskNumber));
+  // ラベル（机の右側の番号）を抽出
+  const seatLabels = matchedBooths.map(booth => booth.place.slice(6));
+  // 対応する DOM 要素を取得
+  const $deskElements = seatLabels.map(lb => $('#' + lb));
 
-    for (let i = 0; i < label.length; i++) {
-      let hall = data[i].place.slice(0,3);
-      let place_name = hall + ' ' + desk + '-' + label[i];
-      $desk_id[i].find('.place').text('(' + place_name + ')');
-      $desk_id[i].find('.name').text(data[i].name);
-      $desk_id[i].find('.master').text(data[i].master);
+  // 一旦全て非表示
+  $('#ab, #a, #b').hide();
+  $('#menu_img').attr('src', './');
 
-      let $product = $desk_id[i].find('.url');
-      $product.find('.goods').attr('href', data[i].xurl);
-      if (data[i].xurl != '') {
-        $product.show();
-      } else {
-        $product.hide();
-      }
+  // 各 booth の情報を反映
+  for (let i = 0; i < seatLabels.length; i++) {
 
-      let $mark = $desk_id[i].find('.mark');
-      if (stored1.includes(desk + label[i])) {
-        $mark.text('★');
-        $mark.css('color', 'yellow');
-      } else {
-        $mark.text('☆');
-        $mark.css('color', 'black');
-      }
+    const boothData = matchedBooths[i];
+    const $deskElement = $deskElements[i];
 
-      if (data[i].menu > 0) {
-        $desk_id[i].find('.menu, .menu_').show();
+    const hallCode = boothData.place.slice(0, 3);
+    const placeName = `${hallCode} ${deskNumber}-${seatLabels[i]}`;
 
-        if (goods_arr.findIndex(g => g.booth === (desk + label[i])) > -1) {
-          $desk_id[i].find('.list, .list_').show();
-        } else {
-          $desk_id[i].find('.list, .list_').hide();
-        }
-      } else {
-        $desk_id[i].find('.menu, .menu_').hide();
-        $desk_id[i].find('.list, .list_').hide();
-      }
-      $desk_id[i].show();
-    }
-    // 使い方・更新履歴のリンクを隠す
-    $('.link').hide();
+    // 基本情報
+    $deskElement.find('.place').text(`(${placeName})`);
+    $deskElement.find('.name').text(boothData.name);
+    $deskElement.find('.master').text(boothData.master);
+
+    // 商品リンク
+    const $productLink = $deskElement.find('.url');
+    $productLink.find('.goods').attr('href', boothData.xurl);
+    boothData.xurl ? $productLink.show() : $productLink.hide();
+
+    // お気に入りマーク
+    const $mark = $deskElement.find('.mark');
+    const isFav = favoriteBooths.includes(deskNumber + seatLabels[i]);
+    $mark.text(isFav ? '★' : '☆');
+    $mark.css('color', isFav ? 'yellow' : 'black');
+
+    // メニュー・リスト表示
+    const hasMenu = boothData.menu > 0;
+    const hasList = goods_arr.some(g => g.booth === deskNumber + seatLabels[i]);
+
+    $deskElement.find('.menu, .menu_').toggle(hasMenu);
+    $deskElement.find('.list, .list_').toggle(hasMenu && hasList);
+
+    // 最後に表示
+    $deskElement.show();
+  }
+
+  // 使い方・更新履歴のリンクを隠す
+  $('.link').hide();
 });
 
 // お品書きをクリック
 $('.club').on('click', '.menu', function () {
 
-  const location  = $(this).closest('.club').find('.place').text();
-  const booth = location.slice(location.indexOf(' ') + 1, location.indexOf(')')).replace('-', '');
+  // --- booth 抽出 ---
+  const placeText = $(this).closest('.club').find('.place').text();
+  const booth = placeText
+    .slice(placeText.indexOf(' ') + 1, placeText.indexOf(')'))
+    .replace('-', '');
 
-  const img_dir = './img_webp/';
-  // お品書きは1ページまでは存在
-  //const img_url = img_dir + booth + '_menu1.jpg';
-  const img_url = img_dir + booth + '_menu1.webp';
-  $('#menu_img').attr('src', img_url);
+  // --- 画像切り替え ---
+  const imgUrl = `./img_webp/${booth}_menu1.webp`;
+  $('#menu_img').attr('src', imgUrl);
 
+  // --- ページ情報更新 ---
   const $pages = $('#pages');
-  $pages.children('.page_num').text(1);
-  const page_max = circle_arr.find(c => c.place.slice(3,) === booth).menu;
-  $pages.children('.page_all').text(page_max);
+  const $pageNum = $pages.children('.page_num');
+  const $pageAll = $pages.children('.page_all');
 
-  if ( page_max > 1) {
-    $pages.children('.back, .go').show();
-  } else {
-    $pages.children('.back, .go').hide();
-  }
+  $pageNum.text(1);
+
+  const pageMax = circle_arr.find(c => c.place.slice(3) === booth)?.menu ?? 1;
+  $pageAll.text(pageMax);
+
+  // --- ページ送りボタンの表示/非表示 ---
+  const $navButtons = $pages.children('.back, .go');
+  pageMax > 1 ? $navButtons.show() : $navButtons.hide();
 });
 
 // 次ページに進む
 $('#pages').on('click', '.go', function () {
   const $pages = $('#pages');
-  const current_page = Number($pages.children('.page_num').text());
-  const final_page = Number($pages.children('.page_all').text());
-  const next_page = current_page + 1;
-  const current_url = $('#menu_img').attr('src');
+  const $pageNum = $pages.children('.page_num');
+  const currentPage = Number($pageNum.text());
+  const finalPage = Number($pages.children('.page_all').text());
+  const nextPage = currentPage < finalPage ? currentPage + 1 : 1;
 
-  if (current_page < final_page) {
-    var next_url = current_url.replace('menu' + String(current_page), 'menu' + String(next_page));
-    $pages.children('.page_num').text(next_page);
-  } else {
-    var next_url = current_url.replace('menu' + String(current_page), 'menu1');
-    $pages.children('.page_num').text(1)
-  }
-  $('#menu_img').attr('src', next_url);
+  const $img = $('#menu_img');
+  const currentUrl = $img.attr('src');
+
+  // menuX の X 部分だけを置き換える
+  const nextUrl = currentUrl.replace(/menu\d+/, `menu${nextPage}`);
+
+  // ページ番号更新
+  $pageNum.text(nextPage);
+
+  // 画像更新
+  $img.attr('src', nextUrl);
 });
 
 // 前ページに戻る
 $('#pages').on('click', '.back', function () {
   const $pages = $('#pages');
-  const current_page = Number($pages.children('.page_num').text());
-  const final_page = Number($pages.children('.page_all').text());
-  const prev_page = current_page - 1;
-  const current_url = $('#menu_img').attr('src');
+  const $pageNum = $pages.children('.page_num');
+  const currentPage = Number($pageNum.text());
+  const finalPage = Number($pages.children('.page_all').text());
+  const prevPage = currentPage > 1 ? currentPage - 1 : finalPage;
 
-  if (current_page > 1) {
-    var next_url = current_url.replace('menu' + String(current_page), 'menu' + String(prev_page));
-    $pages.children('.page_num').text(prev_page);
-  } else {
-    var next_url = current_url.replace('menu' + String(current_page), 'menu' + String(final_page));
-    $pages.children('.page_num').text(final_page)
-  }
-  $('#menu_img').attr('src', next_url);
+  const $img = $('#menu_img');
+  const currentUrl = $img.attr('src');
+
+  // menuX の X 部分だけを安全に置き換える
+  const nextUrl = currentUrl.replace(/menu\d+/, `menu${prevPage}`);
+
+  // ページ番号更新
+  $pageNum.text(prevPage);
+
+  // 画像更新
+  $img.attr('src', nextUrl);
 });
 
 // リストをクリック
 $('.club').on('click', '.list', function () {
-  const location  = $(this).closest('.club').find('.place').text();
-  const booth = location.slice(location.indexOf(' ') + 1, location.indexOf(')')).replace('-', '');
+  const place  = $(this).closest('.club').find('.place').text();
+  const booth = place.slice(place.indexOf(' ') + 1, place.indexOf(')')).replace('-', '');
   const items = goods_arr.filter(g => g.booth === booth);
-  let list ='';
+
+  let list = '';
 
   for (const item of items) {
-    list += '<div class="item">';
-    list += '<span class="goods_name">';
-    if (item.tag) list += '【' + item.tag + '】';
-    list += item.kinds;
-    if (item.unit) list += ' (' + item.unit + ')';
-    list += '</span>';
-    list += '</div>';
-  }
+    const maxValue = item.limit ? item.limit : 99;
 
+    list += `
+      <div class="item">
+        <div class="goods">
+          <span class="goods_name">
+            ${item.tag ? `【${item.tag}】` : ''}${item.kinds}${item.unit ? ` (${item.unit})` : ''}
+          </span>
+          <span class="goods_num">
+            × <input type="number" class="buy_num" name="buy_num" min="0" max="${maxValue}" value="0">
+          </span>
+        </div>
+
+        <div class="goods_price" data-price="${item.price}">
+          ${item.price} 円/個
+        </div>
+      </div>
+    `;
+  }
   $('#goods_list').html(list);
+  $('#goods_list').data('booth', `${booth}`);
+
+  // --- stored2 の内容を反映 ---
+  const currentBooth = $('#goods_list').data('booth');
+
+  // このブースのデータだけに絞る
+  const savedItems = stored2.filter(s => s.booth === currentBooth);
+
+  $('#goods_list .item').each(function () {
+    const $item = $(this);
+
+    const nameText = $item.find('.goods_name').text().trim();
+    const priceValue = Number($item.find('.goods_price').data('price'));
+
+    const saved = savedItems.find(s =>
+      s.name === nameText &&
+      s.price === priceValue
+    );
+
+    if (!saved) return;
+
+    $item.find('.buy_num').val(saved.num);
+    if (saved.num > 0) {
+      $item.addClass('select');
+    }
+  });
+
+  let sum = 0;
+  // 支払い計算(画面切り替え用)
+  $('.item.select').each(function () {
+    const $item = $(this);
+    const price = Number($item.find('.goods_price').data('price'));
+    const qty = Number($item.find('.buy_num').val());
+    sum += price * qty;
+  });
+  $('#accounting').children('.payment').text(sum);
 });
 
-$('#goods_list').on('click', '.goods_name', function () {
-  const $item = $(this).parent('.item');
-  if ($item.hasClass('select')) {
-    $item.removeClass('select');
+// 購入個数が変更されたとき
+$('#goods_list').on('change', '.buy_num', function () {
+  const $num = $(this);
+  const booth_name = $('#goods_list').data('booth');
+
+  const $item = $num.closest('.item');
+  // 空白や改行を削除
+  const goods_name = $item.find('.goods_name').text().trim();
+  const goods_price = Number($item.find('.goods_price').data('price'));
+
+  // 0より大きいかで選択状態を切り替え
+  const qty = Number($num.val());
+  $item.toggleClass('select', qty > 0);
+
+  // --- stored2 の更新処理 ---
+  // 既存データを検索
+  const existing = stored2.find(item =>
+    item.booth === booth_name && item.name === goods_name && item.price === goods_price
+  );
+
+  if (qty > 0) {
+    if (existing) {
+      // 既存データがあれば数量を更新
+      existing.num = qty;
+    } else {
+      // なければ新規追加
+      stored2.push({
+        booth: booth_name,
+        name: goods_name,
+        price: goods_price,
+        num: qty
+      });
+    }
   } else {
-    $item.addClass('select');
+    // qty が 0 → 該当データを削除
+    stored2 = stored2.filter(item =>
+      !(item.booth === booth_name && item.name === goods_name && item.price === goods_price)
+    );
   }
-  localStorage.setItem('purchase', JSON.stringify(stored2));
+
+  let sum = 0;
+  // 支払い計算
+  $('.item.select').each(function () {
+    const $item = $(this);
+    const price = Number($item.find('.goods_price').data('price'));
+    const qty = Number($item.find('.buy_num').val());
+    sum += price * qty;
+  });
+  $('#accounting').children('.payment').text(sum);
+
+  let total = 0;
+  // 総支払い計算
+  for (const saved of stored2) {
+    total += saved.price * saved.num;
+  }
+  $('#total').children('.payment').text(total);
 });
 
 
