@@ -24,7 +24,7 @@
     "place": "1号館あ09ab",
     "name": "レヒトの帽子",
     "master": "らむね",
-    "xurl": "https://x.com/search?q=igarashi_tea,m_12thanthology&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Aigarashi_tea%20or%20from%3Am_12thanthology%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -66,21 +66,21 @@
     "place": "1号館お49a",
     "name": "どちらかといえば素体",
     "master": "ひのこ",
-    "xurl": "https://x.com/search?q=hinoko_kabe&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Ahinoko_kabe%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館お50a",
     "name": "Yacoっとよーぐると！",
     "master": "やこ",
-    "xurl": "https://x.com/search?q=yakkm0,YakamaSea&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Ayakkm0%20or%20from%3AYakamaSea%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館お50b",
     "name": "海空船",
     "master": "未羽",
-    "xurl": "https://x.com/search?q=trths0930&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Atrths0930%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -101,14 +101,14 @@
     "place": "1号館お52b",
     "name": "雨宿り",
     "master": "イワシ",
-    "xurl": "https://x.com/search?q=Noname07mlst&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3ANoname07mlst%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館お53a",
     "name": "すいめんみなも",
     "master": "らこめ",
-    "xurl": "https://x.com/search?q=rakorakome&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Arakorakome%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -122,14 +122,14 @@
     "place": "1号館お54b",
     "name": "きまぐれびより本店",
     "master": "イテヤ",
-    "xurl": "https://x.com/search?q=szlk165&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Aszlk165%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館お55ab",
     "name": "きまぐれびよりみゆさん支店",
     "master": "みゆ",
-    "xurl": "https://x.com/search?q=gomaumiyu&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Agomaumiyu%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -157,14 +157,14 @@
     "place": "1号館お58ab",
     "name": "媚びたTシャツ屋さんfeat.はこぶね",
     "master": "アーク",
-    "xurl": "https://x.com/search?q=ark_merusuto,underkmr&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Aark_merusuto%20or%20from%3Aunderkmr%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館お59ab",
     "name": "あの星へ",
     "master": "Sane",
-    "xurl": "https://x.com/search?q=Sane_314&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3ASane_314%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -178,7 +178,7 @@
     "place": "1号館お60b",
     "name": "ゲス同盟",
     "master": "めぐ",
-    "xurl": "https://x.com/search?q=valllhalllla&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Avalllhalllla%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -192,14 +192,14 @@
     "place": "1号館お61b",
     "name": "おかゆなら食べた",
     "master": "釜玉うどんの生卵",
-    "xurl": "https://x.com/search?q=kankanknt&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Akankanknt%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館お62a",
     "name": "かみつば文芸部",
     "master": "シャトン",
-    "xurl": "https://x.com/search?q=nekoneko_chaton&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Anekoneko_chaton%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -213,70 +213,70 @@
     "place": "1号館お63a",
     "name": "tomoare",
     "master": "niwa",
-    "xurl": "https://x.com/search?q=mizukusa_niwa&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Amizukusa_niwa%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館お63b",
     "name": "smicco.",
     "master": "810",
-    "xurl": "https://x.com/search?q=poppo_coo&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Apoppo_coo%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館お64a",
     "name": "じゃがいもの湯",
     "master": "ゆなこ",
-    "xurl": "https://x.com/search?q=136yu&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3A136yu%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館お64b",
     "name": "梅雨の缶づめ",
     "master": "雨缶",
-    "xurl": "https://x.com/search?q=yuriknm&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Ayuriknm%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か01a",
     "name": "ましゅまろうぉーず",
     "master": "たかみん／りんと",
-    "xurl": "https://x.com/search?q=r_takamine,mmm_mrst&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Ar_takamine%20or%20from%3Ammm_mrst%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か01b",
     "name": "かたすみ非常食",
     "master": "はりやぎ",
-    "xurl": "https://x.com/search?q=hariyaginko&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Ahariyaginko%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か02a",
     "name": "たまごレンチン",
     "master": "四月とを",
-    "xurl": "https://x.com/search?q=sigsig490&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Asigsig490%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か02b",
     "name": "(株)どくだみりんご",
     "master": "かいちょお",
-    "xurl": "https://x.com/search?q=shunkaichoo0910&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Ashunkaichoo0910%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か03a",
     "name": "猫と氷菓子。",
     "master": "猫まんじゅう",
-    "xurl": "https://x.com/search?q=PandoraCouha&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3APandoraCouha%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か03b",
     "name": "StellaLuccica",
     "master": "月宮るな",
-    "xurl": "https://x.com/search?q=luna_seventh&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Aluna_seventh%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -290,7 +290,7 @@
     "place": "1号館か04b",
     "name": "月飴屋",
     "master": "べっこう飴",
-    "xurl": "https://x.com/search?q=veccoame_02,mondayo__&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Aveccoame_02%20or%20from%3Amondayo__%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -304,28 +304,28 @@
     "place": "1号館か05b",
     "name": "えだまめ生活",
     "master": "ルーク玉子",
-    "xurl": "https://x.com/search?q=rukem_fe&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Arukem_fe%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か06a",
     "name": "もあいきのこ",
     "master": "もゆき",
-    "xurl": "https://x.com/search?q=moyu06&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Amoyu06%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か06b",
     "name": "ぽよぽよDX",
     "master": "高城よよよ",
-    "xurl": "https://x.com/search?q=akka_ri&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Aakka_ri%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か07ab",
     "name": "連日砂嵐",
     "master": "BNG、はゃゃ",
-    "xurl": "https://x.com/search?q=Sandstorm_BNG,tomoetomonokai&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3ASandstorm_BNG%20or%20from%3Atomoetomonokai%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -339,35 +339,35 @@
     "place": "1号館か09ab",
     "name": "ぜぇ変奏曲",
     "master": "めしねえ",
-    "xurl": "https://x.com/search?q=nushimee,mrst_sabaku_&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Anushimee%20or%20from%3Amrst_sabaku_%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か10a",
     "name": "スミレの砂糖づけ",
     "master": "423",
-    "xurl": "https://x.com/search?q=423smr&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3A423smr%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か10b",
     "name": "からあげ庵",
     "master": "ふいな",
-    "xurl": "https://x.com/search?q=iorifina&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Aiorifina%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か11a",
     "name": "謳うこうもり本舗",
     "master": "こたろ",
-    "xurl": "https://x.com/search?q=kotaRoU8q&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3AkotaRoU8q%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か12a",
     "name": "夏炉冬扇",
     "master": "睦月",
-    "xurl": "https://x.com/search?q=mutsuki_ika&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Amutsuki_ika%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -381,7 +381,7 @@
     "place": "1号館か13a",
     "name": "魑魅モン魎",
     "master": "West仮面",
-    "xurl": "https://x.com/search?q=Westkamen&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3AWestkamen%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -402,49 +402,49 @@
     "place": "1号館か14b",
     "name": "hiemalis",
     "master": "ラルゴ",
-    "xurl": "https://x.com/search?q=rarugo512&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Ararugo512%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か15a",
     "name": "四紫類累",
     "master": "紫水ココ",
-    "xurl": "https://x.com/search?q=okanoue1tyoume&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Aokanoue1tyoume%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か15b",
     "name": "シオコブジェット",
     "master": "けやき",
-    "xurl": "https://x.com/search?q=zlkv_k&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Azlkv_k%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か16b",
     "name": "土曜ビーム",
     "master": "東",
-    "xurl": "https://x.com/search?q=aaazmaaax,enjoyandgame&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Aaaazmaaax%20or%20from%3Aenjoyandgame%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か17a",
     "name": "おサルの星の印刷所",
     "master": "おサルモンキー星人",
-    "xurl": "https://x.com/search?q=saruhoshi&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Asaruhoshi%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か17b",
     "name": "茶葉の浦",
     "master": "あおい",
-    "xurl": "https://x.com/search?q=ibuki_cos_27&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Aibuki_cos_27%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "6号館E36b",
     "name": "四の五の才六亭",
     "master": "鴫浦",
-    "xurl": "https://x.com/search?q=shigmasa_g&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Ashigmasa_g%20filter%3Alinks&src=typed_query&f=live",
     "menu": 0
   }
 ]

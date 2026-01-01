@@ -1,0 +1,341 @@
+﻿[
+  {
+    "booth": "あ07ab",
+    "kinds": "NLセット",
+    "unit": "ライアン",
+    "price": 2500,
+    "limit": 1
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "DXセット",
+    "unit": "ライアン",
+    "price": 4000,
+    "limit": 1
+  },
+  {
+    "booth": "あ07ab",
+    "tag": "new",
+    "kinds": "シールブック",
+    "price": 600
+  },
+  {
+    "booth": "あ07ab",
+    "tag": "new",
+    "kinds": "クリアケース",
+    "price": 1000
+  },
+  {
+    "booth": "あ07ab",
+    "tag": "new",
+    "kinds": "シャカシャカアクキー",
+    "price": 800
+  },
+  {
+    "booth": "あ07ab",
+    "tag": "new",
+    "kinds": "水面アクキー",
+    "price": 800
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "アクリルチャーム",
+    "price": 300
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "3連アクキー",
+    "unit": "ユウ",
+    "price": 1200
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "3連アクキー",
+    "unit": "レクルス",
+    "price": 1200
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "3連アクキー",
+    "unit": "ライアン",
+    "price": 1200
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "3連アクキー",
+    "unit": "フォルナ",
+    "price": 1200
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "3連アクキー",
+    "unit": "トゥリクル",
+    "price": 1200
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "自立ミニアクスタ",
+    "price": 400
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "ティンクルチャーム",
+    "price": 500
+  },
+  {
+    "booth": "あ07ab",
+    "tag": "未定",
+    "kinds": "色紙",
+    "price": 1000
+  },
+  {
+    "booth": "あ07ab",
+    "tag": "既刊",
+    "kinds": "漫画",
+    "price": 500
+  },
+  {
+    "booth": "あ07ab",
+    "tag": "既刊",
+    "kinds": "漫画・小説",
+    "price": 800
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "アクキー",
+    "price": 500
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "フェルトキー",
+    "price": 400
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "オイルアクキー",
+    "price": 1300
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "シャカキー",
+    "price": 1300
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "海アクスタ",
+    "price": 1000
+  },
+  {
+    "booth": "あ07ab",
+    "tag": "既刊",
+    "kinds": "フルカラー本",
+    "price": 600
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "自立ミニアクスタ",
+    "unit": "モンス",
+    "price": 400
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "両面アクスタ",
+    "price": 500
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "シャカキー",
+    "price": 1300
+  },
+  {
+    "booth": "あ07ab",
+    "kinds": "缶バッジ",
+    "price": 100
+  },
+  {
+    "booth": "あ11a",
+    "tag": "新刊",
+    "kinds": "イラスト本セット",
+    "price": 2000
+  },
+  {
+    "booth": "お48a",
+    "tag": "新刊",
+    "kinds": "文庫小説",
+    "unit": "ルレルシ",
+    "price": 400
+  },
+  {
+    "booth": "お48a",
+    "tag": "既刊",
+    "kinds": "漫画",
+    "price": 400
+  },
+  {
+    "booth": "お48a",
+    "kinds": "アクスタ",
+    "unit": "ルレルシ",
+    "price": 500
+  },
+  {
+    "booth": "お48a",
+    "kinds": "シール",
+    "unit": "ユウシエ",
+    "price": 100
+  },
+  {
+    "booth": "お48a",
+    "kinds": "スケッチブック",
+    "unit": "ウェルテオ",
+    "price": 500
+  },
+  {
+    "booth": "お48a",
+    "kinds": "サコッシュ",
+    "price": 700
+  },
+  {
+    "booth": "お48a",
+    "kinds": "コースター",
+    "price": 500
+  },
+  {
+    "booth": "お48a",
+    "kinds": "チャーム",
+    "price": 200
+  },
+  {
+    "booth": "お48a",
+    "kinds": "パスケース",
+    "price": 600
+  },
+  {
+    "booth": "お57ab",
+    "kinds": "キーホルダー",
+    "unit": "トト",
+    "price": 1000
+  },
+  {
+    "booth": "お57ab",
+    "kinds": "ストラップ",
+    "unit": "ラビュ",
+    "price": 900
+  },
+  {
+    "booth": "お57ab",
+    "kinds": "ストラップ",
+    "unit": "フロラビュ",
+    "price": 1100
+  },
+  {
+    "booth": "お57ab",
+    "kinds": "ストラップ",
+    "unit": "ククラーム",
+    "price": 900
+  },
+  {
+    "booth": "お57ab",
+    "kinds": "A5クリアファイル",
+    "price": 300
+  },
+  {
+    "booth": "お57ab",
+    "kinds": "A4クリアファイル",
+    "price": 400
+  },
+  {
+    "booth": "お57ab",
+    "kinds": "スマホホルダー",
+    "price": 1000
+  },
+  {
+    "booth": "お57ab",
+    "kinds": "エコバッグ",
+    "price": 2500
+  },
+  {
+    "booth": "お57ab",
+    "kinds": "マステ",
+    "price": 600
+  },
+  {
+    "booth": "お57ab",
+    "kinds": "A5リングノート",
+    "price": 600
+  },
+  {
+    "booth": "お57ab",
+    "kinds": "ポーチ",
+    "price": 1300
+  },
+  {
+    "booth": "お57ab",
+    "kinds": "ポストイットセット",
+    "price": 800
+  },
+  {
+    "booth": "お61b",
+    "kinds": "アクスタ",
+    "unit": "ミシェリア",
+    "price": 1000
+  },
+  {
+    "booth": "お61b",
+    "kinds": "アクスタ",
+    "unit": "ヴィアシオン",
+    "price": 1000
+  },
+  {
+    "booth": "お61b",
+    "kinds": "ブランケット",
+    "unit": "ブラン",
+    "price": 2500
+  },
+  {
+    "booth": "お61b",
+    "kinds": "ポスカ",
+    "price": 200
+  },
+  {
+    "booth": "お61b",
+    "kinds": "シール",
+    "price": 200
+  },
+  {
+    "booth": "お61b",
+    "tag": "既刊",
+    "kinds": "4コマ漫画",
+    "price": 100
+  },
+  {
+    "booth": "お61b",
+    "kinds": "缶バッジ",
+    "price": 200
+  },
+  {
+    "booth": "お61b",
+    "kinds": "アクキー",
+    "price": 500
+  },
+  {
+    "booth": "お61b",
+    "kinds": "メダルポーチ",
+    "price": 500
+  },
+  {
+    "booth": "お61b",
+    "kinds": "アクキー",
+    "unit": "ミシェリア",
+    "price": 500
+  },
+  {
+    "booth": "お61b",
+    "kinds": "シール",
+    "price": 100
+  },
+  {
+    "booth": "お61b",
+    "kinds": "色紙",
+    "price": 500
+  }
+]
