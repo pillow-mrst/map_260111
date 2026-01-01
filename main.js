@@ -10,6 +10,31 @@ let stored2 = [];
 //localStorage.removeItem('bookmark');
 //localStorage.removeItem('purchase');
 
+// 支払い計算＋値の反映
+function calcSumDisp() {
+  let sum = 0;
+
+  $('.item.select').each(function () {
+    const $item = $(this);
+    const price = Number($item.find('.goods_price').data('price'));
+    const qty = Number($item.find('.buy_num').val());
+    sum += price * qty;
+  });
+
+  $('#accounting').children('.payment').text(sum.toLocaleString());
+};
+
+// 総支払い計算＋値の反映
+function calcTotalDisp() {
+  let total = 0;
+
+  for (const saved of stored2) {
+    total += saved.price * saved.num;
+  }
+  $('#total').children('.payment').text(total.toLocaleString());;
+};
+
+
 $(document).ready(async function() {
   // jsonファイル読み込み
   try {
@@ -51,8 +76,9 @@ $('#load').on('click', function () {
     $club.find('.mark').text('☆').css('color', 'black');
 
     if (localStorage.hasOwnProperty('bookmark')) {
+      // 変更するとエラー出るので注意
       if (localStorage.getItem('bookmark').length > 0) {
-        favoriteBooths = localStorage.getItem('bookmark').split(',');
+        favoriteBooths = localStorage.getItem('bookmark').split(',') || '[]';
         //console.log(favoriteBooths);
 
         // データ数0だとここでエラー出るよ
@@ -66,31 +92,12 @@ $('#load').on('click', function () {
     if (localStorage.hasOwnProperty('purchase')) {
       stored2 = JSON.parse(localStorage.getItem('purchase') || '[]');
       //console.log(stored2);
+      calcTotalDisp();
     }
 
     alert('保存したデータを呼び出しました。');
   }
 });
-
-// ブックマークをリセット
-/*
-$('#reset').on('click', function () {
-  const ans = window.confirm('ブックマークを初期化しますか？');
-  if (ans) {
-    if (localStorage.hasOwnProperty('bookmark')) {
-      // ブラウザ保存データを初期化
-      localStorage.setItem('bookmark', '');
-
-      const $club = $('.club');
-      $('.container').find('.booth').removeClass('fav');
-      $club.find('.favorite').prop('checked', false);
-      //$club.find('.mark').text('☆');
-      //$club.find('.mark').css('color', 'black');
-      $club.find('.mark').text('☆').css('color', 'black');
-    }
-  }
-});
-*/
 
 // キーワード検索を実行
 $('#search').on('click', function () {
@@ -282,26 +289,36 @@ $('.club').on('click', '.list', function () {
 
   let list = '';
 
-  for (const item of items) {
-    const maxValue = item.limit ? item.limit : 99;
+for (const item of items) {
+  const maxValue = item.limit ? item.limit : 10;
 
-    list += `
-      <div class="item">
-        <div class="goods">
-          <span class="goods_name">
-            ${item.tag ? `【${item.tag}】` : ''}${item.kinds}${item.unit ? ` (${item.unit})` : ''}
-          </span>
-          <span class="goods_num">
-            × <input type="number" class="buy_num" name="buy_num" min="0" max="${maxValue}" value="0">
-          </span>
-        </div>
-
-        <div class="goods_price" data-price="${item.price}">
-          ${item.price} 円/個
-        </div>
-      </div>
-    `;
+  // プルダウンの選択肢を生成
+  let options = '';
+  for (let i = 0; i <= maxValue; i++) {
+    options += `<option value="${i}">${i}</option>`;
   }
+
+  list += `
+    <div class="item">
+      <div class="goods">
+        <span class="goods_name">
+          ${item.tag ? `【${item.tag}】` : ''}${item.kinds}${item.unit ? ` (${item.unit})` : ''}
+        </span>
+        <span class="goods_num">
+          ×
+          <select class="buy_num" name="buy_num">
+            ${options}
+          </select>
+        </span>
+      </div>
+
+      <div class="goods_price" data-price="${item.price}">
+        ${item.price.toLocaleString()} 円/個
+      </div>
+    </div>
+  `;
+}
+
   $('#goods_list').html(list);
   $('#goods_list').data('booth', `${booth}`);
 
@@ -330,6 +347,7 @@ $('.club').on('click', '.list', function () {
     }
   });
 
+  /*
   let sum = 0;
   // 支払い計算(画面切り替え用)
   $('.item.select').each(function () {
@@ -339,6 +357,10 @@ $('.club').on('click', '.list', function () {
     sum += price * qty;
   });
   $('#accounting').children('.payment').text(sum);
+  */
+
+  // 支払い計算(画面切り替え用)
+  calcSumDisp();
 });
 
 // 購入個数が変更されたとき
@@ -381,6 +403,7 @@ $('#goods_list').on('change', '.buy_num', function () {
     );
   }
 
+  /*
   let sum = 0;
   // 支払い計算
   $('.item.select').each(function () {
@@ -390,13 +413,18 @@ $('#goods_list').on('change', '.buy_num', function () {
     sum += price * qty;
   });
   $('#accounting').children('.payment').text(sum);
+  */
+  calcSumDisp();
 
+  /*
   let total = 0;
   // 総支払い計算
   for (const saved of stored2) {
     total += saved.price * saved.num;
   }
   $('#total').children('.payment').text(total);
+  */
+ calcTotalDisp();
 });
 
 
