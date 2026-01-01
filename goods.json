@@ -153,6 +153,27 @@
     "price": 100
   },
   {
+    "booth": "あ08a",
+    "tag": "新刊",
+    "kinds": "フルカラー本",
+    "price": 1000
+  },
+  {
+    "booth": "あ08a",
+    "kinds": "シール",
+    "price": 500
+  },
+  {
+    "booth": "あ08a",
+    "kinds": "アクキー",
+    "price": 2000
+  },
+  {
+    "booth": "あ08a",
+    "kinds": "カード",
+    "price": 200
+  },
+  {
     "booth": "あ11a",
     "tag": "新刊",
     "kinds": "イラスト本セット",
@@ -274,67 +295,107 @@
     "price": 800
   },
   {
-    "booth": "お61b",
+    "booth": "お58ab",
+    "tag": "new",
+    "kinds": "Tシャツ",
+    "price": 3000
+  },
+  {
+    "booth": "お58ab",
+    "tag": "new",
+    "kinds": "シール9種入り",
+    "price": 500
+  },
+  {
+    "booth": "お58ab",
+    "tag": "new",
+    "kinds": "アクリルブロック",
+    "unit": "ピングィー",
+    "price": 500
+  },
+  {
+    "booth": "お58ab",
+    "tag": "ガチャ",
+    "kinds": "アナログ原画",
+    "price": 500
+  },
+  {
+    "booth": "お58ab",
+    "kinds": "イラスト本",
+    "price": 500
+  },
+  {
+    "booth": "お58ab",
+    "kinds": "ピングィー缶",
+    "price": 500
+  },
+  {
+    "booth": "お58ab",
+    "kinds": "Tシャツ",
+    "price": 2000
+  },
+  {
+    "booth": "お61a",
     "kinds": "アクスタ",
     "unit": "ミシェリア",
     "price": 1000
   },
   {
-    "booth": "お61b",
+    "booth": "お61a",
     "kinds": "アクスタ",
     "unit": "ヴィアシオン",
     "price": 1000
   },
   {
-    "booth": "お61b",
+    "booth": "お61a",
     "kinds": "ブランケット",
     "unit": "ブラン",
     "price": 2500
   },
   {
-    "booth": "お61b",
+    "booth": "お61a",
     "kinds": "ポスカ",
     "price": 200
   },
   {
-    "booth": "お61b",
+    "booth": "お61a",
     "kinds": "シール",
     "price": 200
   },
   {
-    "booth": "お61b",
+    "booth": "お61a",
     "tag": "既刊",
     "kinds": "4コマ漫画",
     "price": 100
   },
   {
-    "booth": "お61b",
+    "booth": "お61a",
     "kinds": "缶バッジ",
     "price": 200
   },
   {
-    "booth": "お61b",
+    "booth": "お61a",
     "kinds": "アクキー",
     "price": 500
   },
   {
-    "booth": "お61b",
+    "booth": "お61a",
     "kinds": "メダルポーチ",
     "price": 500
   },
   {
-    "booth": "お61b",
+    "booth": "お61a",
     "kinds": "アクキー",
     "unit": "ミシェリア",
     "price": 500
   },
   {
-    "booth": "お61b",
+    "booth": "お61a",
     "kinds": "シール",
     "price": 100
   },
   {
-    "booth": "お61b",
+    "booth": "お61a",
     "kinds": "色紙",
     "price": 500
   }
