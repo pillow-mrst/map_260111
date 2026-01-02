@@ -176,8 +176,56 @@
   {
     "booth": "あ11a",
     "tag": "新刊",
+    "kinds": "イラスト本",
+    "price": 500
+  },
+  {
+    "booth": "あ11a",
+    "tag": "新刊",
     "kinds": "イラスト本セット",
     "price": 2000
+  },
+  {
+    "booth": "あ11a",
+    "tag": "既刊",
+    "kinds": "イラスト本",
+    "price": 600
+  },
+  {
+    "booth": "あ11a",
+    "tag": "new",
+    "kinds": "アクスタ",
+    "unit": "マガピタ",
+    "price": 1000
+  },
+  {
+    "booth": "あ11a",
+    "kinds": "クリアしおり",
+    "price": 300
+  },
+  {
+    "booth": "あ11b",
+    "tag": "新刊",
+    "kinds": "漫画",
+    "price": 500
+  },
+  {
+    "booth": "あ11b",
+    "tag": "既刊",
+    "kinds": "イラスト集",
+    "price": 500
+  },
+  {
+    "booth": "あ11b",
+    "tag": "既刊",
+    "kinds": "創作制服本",
+    "price": 500
+  },
+  {
+    "booth": "あ11b",
+    "tag": "既刊",
+    "kinds": "イラスト集",
+    "price": 1000
   },
   {
     "booth": "お48a",
@@ -335,6 +383,26 @@
     "price": 2000
   },
   {
+    "booth": "お60b",
+    "kinds": "コスプレポスカ",
+    "price": 400
+  },
+  {
+    "booth": "お60b",
+    "kinds": "アンブレラマーカー",
+    "price": 400
+  },
+  {
+    "booth": "お60b",
+    "kinds": "ロゼット",
+    "price": 400
+  },
+  {
+    "booth": "お60b",
+    "kinds": "ブローチ",
+    "price": 400
+  },
+  {
     "booth": "お61a",
     "kinds": "アクスタ",
     "unit": "ミシェリア",
@@ -398,5 +466,56 @@
     "booth": "お61a",
     "kinds": "色紙",
     "price": 500
+  },
+  {
+    "booth": "か07ab",
+    "tag": "新刊",
+    "kinds": "ノベル集",
+    "price": 1000
+  },
+  {
+    "booth": "か07ab",
+    "tag": "既刊",
+    "kinds": "ノベル集",
+    "price": 1000
+  },
+  {
+    "booth": "か07ab",
+    "tag": "既刊",
+    "kinds": "考察本 vol.1",
+    "price": 700
+  },
+  {
+    "booth": "か07ab",
+    "tag": "既刊",
+    "kinds": "考察本 vol.2",
+    "price": 700
+  },
+  {
+    "booth": "か07ab",
+    "kinds": "サコッシュ",
+    "price": 1000
+  },
+  {
+    "booth": "か09ab",
+    "tag": "新刊",
+    "kinds": "イラスト本",
+    "price": 1200
+  },
+  {
+    "booth": "か09ab",
+    "kinds": "缶バッジ",
+    "price": 200
+  },
+  {
+    "booth": "か09ab",
+    "kinds": "アクリルストラップ",
+    "price": 500
+  },
+  {
+    "booth": "E36b",
+    "tag": "新刊",
+    "kinds": "漫画",
+    "price": 300
   }
 ]
