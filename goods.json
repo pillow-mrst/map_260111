@@ -1,5 +1,31 @@
 ﻿[
   {
+    "booth": "か15a",
+    "tag": "new",
+    "kinds": "エイドキットセット",
+    "price": 2000
+  },
+  {
+    "booth": "か15a",
+    "kinds": "ピルケース",
+    "price": 700
+  },
+  {
+    "booth": "か15a",
+    "kinds": "ビニールポーチ",
+    "price": 1500
+  },
+  {
+    "booth": "か15a",
+    "kinds": "ステッカー",
+    "price": 100
+  },
+  {
+    "booth": "か15a",
+    "kinds": "シールセット",
+    "price": 500
+  },
+  {
     "booth": "あ07ab",
     "kinds": "NLセット",
     "unit": "ライアン",
@@ -174,6 +200,38 @@
     "price": 200
   },
   {
+    "booth": "あ10ab",
+    "tag": "新刊",
+    "kinds": "イラスト本セット",
+    "price": 2500,
+    "limit": 1
+  },
+  {
+    "booth": "あ10ab",
+    "tag": "新刊",
+    "kinds": "イラスト本",
+    "price": 600,
+    "limit": 1
+  },
+  {
+    "booth": "あ10ab",
+    "kinds": "アクスタ",
+    "unit": "オルトス",
+    "price": 800
+  },
+  {
+    "booth": "あ10ab",
+    "kinds": "アクスタ",
+    "unit": "ミシェリア",
+    "price": 800
+  },
+  {
+    "booth": "あ10ab",
+    "kinds": "アクスタセット",
+    "unit": "オルミシェ",
+    "price": 1500
+  },
+  {
     "booth": "あ11a",
     "tag": "新刊",
     "kinds": "イラスト本",
@@ -277,6 +335,55 @@
     "booth": "お48a",
     "kinds": "パスケース",
     "price": 600
+  },
+  {
+    "booth": "お49b",
+    "tag": "新刊",
+    "kinds": "本",
+    "price": 500
+  },
+  {
+    "booth": "お49b",
+    "tag": "既刊",
+    "kinds": "本",
+    "price": 400
+  },
+  {
+    "booth": "お54b",
+    "kinds": "コースター",
+    "price": 100
+  },
+  {
+    "booth": "お54b",
+    "kinds": "くつした",
+    "price": 1500
+  },
+  {
+    "booth": "お54b",
+    "kinds": "リュック",
+    "price": 2000
+  },
+  {
+    "booth": "お55ab",
+    "tag": "新刊",
+    "kinds": "イラスト本セット",
+    "price": 3000
+  },
+  {
+    "booth": "お55ab",
+    "tag": "新刊",
+    "kinds": "イラスト本",
+    "price": 500
+  },
+  {
+    "booth": "お55ab",
+    "kinds": "ブランケット",
+    "price": 2000
+  },
+  {
+    "booth": "お55ab",
+    "kinds": "トートバッグ",
+    "price": 1500
   },
   {
     "booth": "お57ab",
@@ -383,6 +490,41 @@
     "price": 2000
   },
   {
+    "booth": "お60a",
+    "kinds": "キーホルダー",
+    "unit": "ミシェリア",
+    "price": 800
+  },
+  {
+    "booth": "お60a",
+    "kinds": "キーホルダー",
+    "unit": "アミャダ",
+    "price": 800
+  },
+  {
+    "booth": "お60a",
+    "kinds": "キーホルダー",
+    "unit": "みくまり",
+    "price": 800
+  },
+  {
+    "booth": "お60a",
+    "kinds": "丸キーホルダー",
+    "unit": "メルク",
+    "price": 800
+  },
+  {
+    "booth": "お60a",
+    "kinds": "角キーホルダー",
+    "unit": "メルク",
+    "price": 800
+  },
+  {
+    "booth": "お60a",
+    "kinds": "ストラップ",
+    "price": 500
+  },
+  {
     "booth": "お60b",
     "kinds": "コスプレポスカ",
     "price": 400
@@ -468,6 +610,311 @@
     "price": 500
   },
   {
+    "booth": "お61a",
+    "kinds": "シール8種セット",
+    "price": 200
+  },
+  {
+    "booth": "お62a",
+    "tag": "new",
+    "kinds": "シーリングスタンプ",
+    "price": 2000
+  },
+  {
+    "booth": "お62a",
+    "tag": "new",
+    "kinds": "シール缶",
+    "price": 800
+  },
+  {
+    "booth": "お62a",
+    "kinds": "クリアファイル",
+    "price": 200
+  },
+  {
+    "booth": "お62a",
+    "kinds": "ポスカセット",
+    "price": 100
+  },
+  {
+    "booth": "お62a",
+    "kinds": "アクキー",
+    "unit": "ロロ1",
+    "price": 800
+  },
+  {
+    "booth": "お62a",
+    "kinds": "アクキー",
+    "unit": "メルレッティ",
+    "price": 800
+  },
+  {
+    "booth": "お62a",
+    "kinds": "ステッカー",
+    "price": 100
+  },
+  {
+    "booth": "お62a",
+    "kinds": "親愛なるあなたへ",
+    "price": 1200
+  },
+  {
+    "booth": "お62a",
+    "kinds": "アクスタ",
+    "unit": "レルハルニー",
+    "price": 800
+  },
+  {
+    "booth": "お62a",
+    "kinds": "アクスタ",
+    "unit": "サリハーティ",
+    "price": 800
+  },
+  {
+    "booth": "お62a",
+    "kinds": "アクスタ",
+    "unit": "マーガレット",
+    "price": 800
+  },
+  {
+    "booth": "お62a",
+    "kinds": "アクスタ",
+    "unit": "ピターニア",
+    "price": 800
+  },
+  {
+    "booth": "お62a",
+    "kinds": "アクスタ1種付き",
+    "price": 1800
+  },
+  {
+    "booth": "お62a",
+    "kinds": "アクスタ2種付き",
+    "price": 2500
+  },
+  {
+    "booth": "お62a",
+    "kinds": "アクスタ全種付き",
+    "price": 4000
+  },
+  {
+    "booth": "お62a",
+    "kinds": "ポーチセット",
+    "price": 2500
+  },
+  {
+    "booth": "お62a",
+    "kinds": "ロロが紡ぐ",
+    "price": 1300
+  },
+  {
+    "booth": "お62a",
+    "kinds": "アクキー",
+    "unit": "プウカ",
+    "price": 800
+  },
+  {
+    "booth": "お62a",
+    "kinds": "アクキー",
+    "unit": "ロロ2",
+    "price": 800
+  },
+  {
+    "booth": "お62a",
+    "kinds": "アクキー1種付き",
+    "price": 1800
+  },
+  {
+    "booth": "お62a",
+    "kinds": "アクキー2種付き",
+    "price": 2500
+  },
+  {
+    "booth": "お62a",
+    "kinds": "トート付き",
+    "price": 2200
+  },
+  {
+    "booth": "か02a",
+    "kinds": "イラスト本",
+    "price": 500
+  },
+  {
+    "booth": "か02a",
+    "kinds": "シール",
+    "price": 100
+  },
+  {
+    "booth": "か03a",
+    "kinds": "スマホリング",
+    "unit": "モケ",
+    "price": 1200
+  },
+  {
+    "booth": "か03a",
+    "kinds": "ポーチ",
+    "price": 1000
+  },
+  {
+    "booth": "か03a",
+    "kinds": "ポスカ",
+    "price": 100
+  },
+  {
+    "booth": "か03a",
+    "tag": "新刊",
+    "kinds": "本",
+    "price": 200
+  },
+  {
+    "booth": "か03a",
+    "kinds": "キーホルダー",
+    "price": 200
+  },
+  {
+    "booth": "か04a",
+    "tag": "新刊",
+    "kinds": "イラスト本",
+    "price": 900
+  },
+  {
+    "booth": "か04a",
+    "tag": "new",
+    "kinds": "シール",
+    "price": 100
+  },
+  {
+    "booth": "か04a",
+    "tag": "new",
+    "kinds": "自立アクスタ",
+    "price": 400
+  },
+  {
+    "booth": "か04a",
+    "kinds": "ステッカー",
+    "price": 200
+  },
+  {
+    "booth": "か04a",
+    "kinds": "アクキー",
+    "price": 1100
+  },
+  {
+    "booth": "か04b",
+    "tag": "新刊",
+    "kinds": "イラスト本",
+    "price": 500
+  },
+  {
+    "booth": "か05a",
+    "tag": "新刊",
+    "kinds": "イラスト本",
+    "price": 600
+  },
+  {
+    "booth": "か05a",
+    "tag": "new",
+    "kinds": "アクキー",
+    "price": 600
+  },
+  {
+    "booth": "か05a",
+    "tag": "new",
+    "kinds": "アクキー5個セット",
+    "price": 2800
+  },
+  {
+    "booth": "か05a",
+    "tag": "new",
+    "kinds": "シール",
+    "price": 200
+  },
+  {
+    "booth": "か05a",
+    "tag": "new",
+    "kinds": "原画",
+    "price": 1000
+  },
+  {
+    "booth": "か06a",
+    "kinds": "イラスト本",
+    "price": 400
+  },
+  {
+    "booth": "か06a",
+    "kinds": "本",
+    "unit": "ミルトニア",
+    "price": 400
+  },
+  {
+    "booth": "か06a",
+    "kinds": "絵本",
+    "price": 300
+  },
+  {
+    "booth": "か06a",
+    "tag": "new",
+    "kinds": "ベレー帽",
+    "price": 3500
+  },
+  {
+    "booth": "か06a",
+    "tag": "new",
+    "kinds": "マフラータオル",
+    "price": 1300
+  },
+  {
+    "booth": "か06a",
+    "kinds": "キーホルダー",
+    "price": 1000
+  },
+  {
+    "booth": "か06a",
+    "kinds": "タオルハンカチ",
+    "price": 700
+  },
+  {
+    "booth": "か06a",
+    "kinds": "キーホルダー",
+    "price": 500
+  },
+  {
+    "booth": "か06a",
+    "kinds": "アンブレラマーカー",
+    "price": 500
+  },
+  {
+    "booth": "か06a",
+    "kinds": "アクキー",
+    "price": 500
+  },
+  {
+    "booth": "か06a",
+    "kinds": "モバイルバッテリー",
+    "price": 1800
+  },
+  {
+    "booth": "か06a",
+    "kinds": "ACアダプタ",
+    "price": 1500
+  },
+  {
+    "booth": "か06a",
+    "kinds": "巾着",
+    "price": 500
+  },
+  {
+    "booth": "か06b",
+    "tag": "新刊",
+    "kinds": "フルカラー本",
+    "price": 500
+  },
+  {
+    "booth": "か06b",
+    "kinds": "シールセット",
+    "price": 100
+  },
+  {
     "booth": "か07ab",
     "tag": "新刊",
     "kinds": "ノベル集",
@@ -497,6 +944,34 @@
     "price": 1000
   },
   {
+    "booth": "か07ab",
+    "tag": "既刊",
+    "kinds": "郷愁",
+    "price": 400
+  },
+  {
+    "booth": "か07ab",
+    "tag": "既刊",
+    "kinds": "シードといっしょ",
+    "price": 500
+  },
+  {
+    "booth": "か07ab",
+    "kinds": "アクスタ",
+    "price": 500
+  },
+  {
+    "booth": "か07ab",
+    "tag": "既刊",
+    "kinds": "サボティン",
+    "price": 500
+  },
+  {
+    "booth": "か07ab",
+    "kinds": "シールセット",
+    "price": 200
+  },
+  {
     "booth": "か09ab",
     "tag": "新刊",
     "kinds": "イラスト本",
@@ -510,6 +985,80 @@
   {
     "booth": "か09ab",
     "kinds": "アクリルストラップ",
+    "price": 500
+  },
+  {
+    "booth": "か10a",
+    "tag": "new",
+    "kinds": "アクスタ",
+    "price": 1000
+  },
+  {
+    "booth": "か10a",
+    "tag": "new",
+    "kinds": "アクキー",
+    "price": 400
+  },
+  {
+    "booth": "か10a",
+    "tag": "new",
+    "kinds": "アンブレラマーカー",
+    "price": 500
+  },
+  {
+    "booth": "か10a",
+    "kinds": "ステッカー＆ポスカセット",
+    "price": 400
+  },
+  {
+    "booth": "か10b",
+    "tag": "新刊1",
+    "kinds": "イラスト本セット",
+    "price": 2500
+  },
+  {
+    "booth": "か10b",
+    "tag": "新刊2",
+    "kinds": "イラスト本",
+    "price": 500
+  },
+  {
+    "booth": "か10b",
+    "tag": "既刊",
+    "kinds": "イラスト本",
+    "price": 1500
+  },
+  {
+    "booth": "か10b",
+    "kinds": "原画",
+    "price": 2000
+  },
+  {
+    "booth": "か10b",
+    "kinds": "フレーム入り原画",
+    "price": 1500
+  },
+  {
+    "booth": "か10b",
+    "kinds": "おみくじ原画",
+    "price": 300
+  },
+  {
+    "booth": "か10b",
+    "kinds": "アクキー",
+    "unit": "メルク",
+    "price": 700
+  },
+  {
+    "booth": "か17a",
+    "tag": "新刊",
+    "kinds": "小説",
+    "price": 1000
+  },
+  {
+    "booth": "か17a",
+    "tag": "既刊",
+    "kinds": "その他",
     "price": 500
   },
   {
