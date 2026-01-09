@@ -283,7 +283,7 @@
     "place": "1号館か02b",
     "name": "(株)どくだみりんご",
     "master": "かいちょお",
-    "xurl": "https://x.com/search?q=from%3Afukukaichoosan%20or%20from%3Awakamewakewake%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Afukukaichoosan%20or%20from%3Awakamewakewake%20or%20from%3A2Mimoka%20or%20from%3Apometama%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -467,5 +467,12 @@
     "master": "鴫浦",
     "xurl": "https://x.com/search?q=from%3Ashigmasa_g%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
     "menu": 1
+  },
+  {
+    "place": "1号館か16a",
+    "name": "わいるど！すぴぃど2",
+    "master": "たろうのすけ",
+    "xurl": "https://x.com/search?q=from%3Aborn3kesan%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
+    "menu": 0
   }
 ]
