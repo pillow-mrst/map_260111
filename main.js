@@ -201,7 +201,7 @@ $('.tbl').on('click', '.booth, .another', function () {
     const hasList = goods_arr.some(g => g.booth === deskNumber + seatLabels[i]);
 
     $deskElement.find('.menu, .menu_').toggle(hasMenu);
-    $deskElement.find('.list, .list_').toggle(hasMenu && hasList);
+    $deskElement.find('.list, .list_').toggle(hasList);
 
     // 最後に表示
     $deskElement.show();
