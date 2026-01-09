@@ -1,0 +1,4 @@
+*.xlsm
+~$*.xlsm
+img/*.jpg
+img/*.png
