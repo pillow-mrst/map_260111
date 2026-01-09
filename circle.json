@@ -53,7 +53,7 @@
     "name": "あざらしの家（メルぱら！Re:3本部）",
     "master": "なつき",
     "xurl": "https://x.com/search?q=from%3ANatsukiAzarashi%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
-    "menu": 0
+    "menu": 1
   },
   {
     "place": "1号館お48a",
@@ -74,7 +74,7 @@
     "name": "どちらかといえば素体",
     "master": "ひのこ",
     "xurl": "https://x.com/search?q=from%3Ahinoko_kabe%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
-    "menu": 0
+    "menu": 2
   },
   {
     "place": "1号館お49b",
@@ -87,7 +87,7 @@
     "place": "1号館お50a",
     "name": "Yacoっとよーぐると！",
     "master": "やこ",
-    "xurl": "https://x.com/search?q=from%3Ayakkm0%20or%20from%3AYakamaSea%20filter%3Alinks&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Ayakkm0%20or%20from%3AYakamaSea%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -102,7 +102,7 @@
     "name": "浮かれクッキー工房",
     "master": "plum",
     "xurl": "https://x.com/search?q=from%3APlumShk%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
-    "menu": 0
+    "menu": 2
   },
   {
     "place": "1号館お52a",
@@ -129,7 +129,7 @@
     "place": "1号館お53b",
     "name": "紫陽花しぐれ",
     "master": "アチェロ",
-    "xurl": "https://x.com/search?q=from%3AAceroKano%20filter%3Alinks&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3AAceroKano%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -151,7 +151,7 @@
     "name": "きまぐれびよりみゆさん支店",
     "master": "みゆ",
     "xurl": "https://x.com/search?q=from%3Agomaumiyu%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
-    "menu": 0
+    "menu": 1
   },
   {
     "place": "1号館お56a",
@@ -164,7 +164,7 @@
     "place": "1号館お56b",
     "name": "うるちもち",
     "master": "ぴっぽ",
-    "xurl": "https://x.com/search?q=from%3Apizapote_nyo%20filter%3Alinks&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Apizapote_nyo%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -193,7 +193,7 @@
     "name": "わさんぼんとう",
     "master": "かなめ",
     "xurl": "https://x.com/search?q=from%3Akaname_mnmlm%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
-    "menu": 0
+    "menu": 1
   },
   {
     "place": "1号館お60b",
@@ -221,27 +221,27 @@
     "name": "かみつば文芸部",
     "master": "シャトン",
     "xurl": "https://x.com/search?q=from%3Anekoneko_chaton%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
-    "menu": 0
+    "menu": 2
   },
   {
     "place": "1号館お62b",
     "name": "あめだま",
     "master": "平和なゆう",
     "xurl": "https://x.com/search?q=from%3Akuonnyuu%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
-    "menu": 0
+    "menu": 4
   },
   {
     "place": "1号館お63a",
     "name": "tomoare",
     "master": "niwa",
-    "xurl": "https://x.com/search?q=from%3Amizukusa_niwa%20filter%3Alinks&src=typed_query&f=live",
+    "xurl": "",
     "menu": 0
   },
   {
     "place": "1号館お63b",
     "name": "smicco.",
     "master": "810",
-    "xurl": "https://x.com/search?q=from%3Apoppo_coo%20filter%3Alinks&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Apoppo_coo%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -256,20 +256,20 @@
     "name": "梅雨の缶づめ",
     "master": "雨缶",
     "xurl": "https://x.com/search?q=from%3Ayuriknm%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
-    "menu": 0
+    "menu": 1
   },
   {
     "place": "1号館か01a",
     "name": "ましゅまろうぉーず",
     "master": "たかみん／りんと",
-    "xurl": "https://x.com/search?q=from%3Ar_takamine%20or%20from%3Ammm_mrst%20filter%3Alinks&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Ar_takamine%20or%20from%3Ammm_mrst%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
     "menu": 0
   },
   {
     "place": "1号館か01b",
     "name": "かたすみ非常食",
     "master": "はりやぎ",
-    "xurl": "https://x.com/search?q=from%3Ahariyaginko%20filter%3Alinks&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Ahariyaginko%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
     "menu": 0
   },
   {
@@ -374,14 +374,14 @@
     "place": "1号館か10b",
     "name": "からあげ庵",
     "master": "ふいな",
-    "xurl": "https://x.com/search?q=from%3Aiorifina%20filter%3Alinks&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Aiorifina%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
     "menu": 3
   },
   {
     "place": "1号館か11a",
     "name": "謳うこうもり本舗",
     "master": "こたろ",
-    "xurl": "https://x.com/search?q=from%3AkotaRoU8q%20filter%3Alinks&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3AkotaRoU8q%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
     "menu": 0
   },
   {
