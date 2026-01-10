@@ -84,7 +84,6 @@
   },
   {
     "booth": "あ07ab",
-    "tag": "未定",
     "kinds": "色紙",
     "price": 1000
   },
@@ -311,33 +310,33 @@
     "price": 1000
   },
   {
-    "booth": "お47b",
+    "booth": "お47ab",
     "kinds": "キミとおそろい",
     "price": 500
   },
   {
-    "booth": "お47b",
+    "booth": "お47ab",
     "kinds": "はじめてのおつかい",
     "price": 500
   },
   {
-    "booth": "お47b",
+    "booth": "お47ab",
     "tag": "R18",
     "kinds": "小説",
     "price": 500
   },
   {
-    "booth": "お47b",
+    "booth": "お47ab",
     "kinds": "空の心と旅の雫",
     "price": 500
   },
   {
-    "booth": "お47b",
+    "booth": "お47ab",
     "kinds": "名探偵ピーター",
     "price": 500
   },
   {
-    "booth": "お47b",
+    "booth": "お47ab",
     "kinds": "プロフェッショナル",
     "price": 300
   },
@@ -391,6 +390,80 @@
     "booth": "お48a",
     "kinds": "パスケース",
     "price": 600
+  },
+  {
+    "booth": "お48b",
+    "tag": "既刊",
+    "kinds": "小説",
+    "price": 800
+  },
+  {
+    "booth": "お48b",
+    "tag": "既刊",
+    "kinds": "しゃっきん！1",
+    "price": 500
+  },
+  {
+    "booth": "お48b",
+    "tag": "既刊",
+    "kinds": "しゃっきん！2",
+    "price": 500
+  },
+  {
+    "booth": "お48b",
+    "tag": "既刊",
+    "kinds": "しゃっきん！3",
+    "price": 600
+  },
+  {
+    "booth": "お48b",
+    "tag": "既刊",
+    "kinds": "しゃっきん！4",
+    "price": 700
+  },
+  {
+    "booth": "お48b",
+    "tag": "既刊",
+    "kinds": "しゃっきん！5",
+    "price": 600
+  },
+  {
+    "booth": "お48b",
+    "tag": "既刊",
+    "kinds": "にじいろ童話集",
+    "price": 600
+  },
+  {
+    "booth": "お48b",
+    "tag": "既刊",
+    "kinds": "ひと匙の愛をあなたに",
+    "price": 700
+  },
+  {
+    "booth": "お48b",
+    "tag": "既刊",
+    "kinds": "イケナイ話",
+    "price": 500
+  },
+  {
+    "booth": "お48b",
+    "kinds": "況や悪人をや",
+    "price": 1000
+  },
+  {
+    "booth": "お48b",
+    "kinds": "コピー小説",
+    "price": 200
+  },
+  {
+    "booth": "お48b",
+    "kinds": "ハンカチ",
+    "price": 400
+  },
+  {
+    "booth": "お48b",
+    "kinds": "アクキー",
+    "price": 500
   },
   {
     "booth": "お49a",
@@ -453,6 +526,40 @@
     "tag": "既刊",
     "kinds": "漫画",
     "price": 600
+  },
+  {
+    "booth": "お50b",
+    "tag": "新刊",
+    "kinds": "SS",
+    "price": 200
+  },
+  {
+    "booth": "お50b",
+    "kinds": "アクスタ",
+    "price": 1000
+  },
+  {
+    "booth": "お50b",
+    "kinds": "アンソロ",
+    "price": 600
+  },
+  {
+    "booth": "お50b",
+    "tag": "R18",
+    "kinds": "アンソロ",
+    "price": 400
+  },
+  {
+    "booth": "お50b",
+    "tag": "R18",
+    "kinds": "ペーパー",
+    "price": 400
+  },
+  {
+    "booth": "お50b",
+    "tag": "委託・R18",
+    "kinds": "リュフシャリ",
+    "price": 3000
   },
   {
     "booth": "お51ab",
@@ -533,11 +640,13 @@
   },
   {
     "booth": "お52b",
+    "tag": "予定",
     "kinds": "コピー本",
     "price": 200
   },
   {
     "booth": "お52b",
+    "tag": "予定",
     "kinds": "色紙",
     "price": 500
   },
@@ -804,6 +913,50 @@
     "booth": "お58ab",
     "kinds": "Tシャツ",
     "price": 2000
+  },
+  {
+    "booth": "お59ab",
+    "kinds": "ブランケット",
+    "price": 2000
+  },
+  {
+    "booth": "お59ab",
+    "kinds": "ハンカチ",
+    "unit": "トト",
+    "price": 2000
+  },
+  {
+    "booth": "お59ab",
+    "kinds": "キーホルダー",
+    "unit": "モケ",
+    "price": 300
+  },
+  {
+    "booth": "お59ab",
+    "kinds": "きんちゃく",
+    "price": 700
+  },
+  {
+    "booth": "お59ab",
+    "kinds": "Tシャツ",
+    "unit": "トト",
+    "price": 2000
+  },
+  {
+    "booth": "お59ab",
+    "kinds": "ポーチ",
+    "unit": "トト",
+    "price": 1000
+  },
+  {
+    "booth": "お59ab",
+    "kinds": "ボールペン",
+    "price": 1500
+  },
+  {
+    "booth": "お59ab",
+    "kinds": "エコバッグ",
+    "price": 1500
   },
   {
     "booth": "お60a",
@@ -1287,6 +1440,39 @@
     "price": 100
   },
   {
+    "booth": "か02b",
+    "kinds": "クリアポスカ",
+    "price": 100
+  },
+  {
+    "booth": "か02b",
+    "kinds": "アクキー",
+    "price": 500
+  },
+  {
+    "booth": "か02b",
+    "kinds": "ミニ色紙",
+    "unit": "レルレラ",
+    "price": 500
+  },
+  {
+    "booth": "か02b",
+    "kinds": "ミニ色紙",
+    "unit": "メルク",
+    "price": 800
+  },
+  {
+    "booth": "か02b",
+    "kinds": "ミニ色紙",
+    "unit": "ミシェリア",
+    "price": 1000
+  },
+  {
+    "booth": "か02b",
+    "kinds": "両面アクスタ",
+    "price": 600
+  },
+  {
     "booth": "か03a",
     "kinds": "スマホリング",
     "unit": "モケ",
@@ -1393,7 +1579,8 @@
   {
     "booth": "か04a",
     "kinds": "水彩原画",
-    "price": 1000
+    "price": 700,
+    "limit": 1
   },
   {
     "booth": "か04b",
@@ -1454,6 +1641,21 @@
     "tag": "new",
     "kinds": "原画",
     "price": 1000
+  },
+  {
+    "booth": "か05b",
+    "kinds": "イラスト本",
+    "price": 500
+  },
+  {
+    "booth": "か05b",
+    "kinds": "ポスカ",
+    "price": 100
+  },
+  {
+    "booth": "か05b",
+    "kinds": "ステッカー",
+    "price": 100
   },
   {
     "booth": "か06a",
@@ -1710,6 +1912,18 @@
     "price": 500
   },
   {
+    "booth": "か12b",
+    "tag": "改訂版",
+    "kinds": "ギルド合同誌",
+    "price": 1800
+  },
+  {
+    "booth": "か12b",
+    "tag": "既刊",
+    "kinds": "ギルド合同誌",
+    "price": 1800
+  },
+  {
     "booth": "か13a",
     "kinds": "エプロン",
     "price": 3000
@@ -1738,6 +1952,36 @@
     "kinds": "アクキー",
     "unit": "コットル",
     "price": 300
+  },
+  {
+    "booth": "か13b",
+    "kinds": "ぬいセット",
+    "unit": "トト",
+    "price": 2000
+  },
+  {
+    "booth": "か13b",
+    "kinds": "ぬい",
+    "unit": "モケ",
+    "price": 2000
+  },
+  {
+    "booth": "か13b",
+    "kinds": "ぬい",
+    "unit": "キャンテ",
+    "price": 1000
+  },
+  {
+    "booth": "か13b",
+    "kinds": "ぬい",
+    "unit": "風呂ラビュ",
+    "price": 1500
+  },
+  {
+    "booth": "か13b",
+    "kinds": "ぬい",
+    "unit": "ラビュ",
+    "price": 1500
   },
   {
     "booth": "か14a",
@@ -1859,6 +2103,24 @@
     "booth": "か16a",
     "kinds": "お守り",
     "unit": "トト",
+    "price": 400
+  },
+  {
+    "booth": "か16b",
+    "tag": "新刊",
+    "kinds": "小説",
+    "price": 300
+  },
+  {
+    "booth": "か16b",
+    "tag": "新刊",
+    "kinds": "漫画",
+    "price": 500
+  },
+  {
+    "booth": "か16b",
+    "tag": "既刊",
+    "kinds": "短編小説",
     "price": 400
   },
   {
