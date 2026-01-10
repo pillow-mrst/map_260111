@@ -1051,6 +1051,99 @@
     "price": 2200
   },
   {
+    "booth": "お62b",
+    "kinds": "天使のお茶会",
+    "price": 500
+  },
+  {
+    "booth": "お62b",
+    "kinds": "アナログイラスト",
+    "price": 500
+  },
+  {
+    "booth": "お62b",
+    "kinds": "アクキー",
+    "unit": "ミシェリア",
+    "price": 500
+  },
+  {
+    "booth": "お62b",
+    "kinds": "アクキー",
+    "unit": "オルトス",
+    "price": 500
+  },
+  {
+    "booth": "お62b",
+    "kinds": "アクキー",
+    "unit": "すずかぜ",
+    "price": 500
+  },
+  {
+    "booth": "お62b",
+    "kinds": "アクキー",
+    "unit": "パルトネール",
+    "price": 500
+  },
+  {
+    "booth": "お62b",
+    "kinds": "アクキー",
+    "unit": "シスル",
+    "price": 500
+  },
+  {
+    "booth": "お62b",
+    "kinds": "アクキー",
+    "unit": "トゥルータ",
+    "price": 500
+  },
+  {
+    "booth": "お62b",
+    "kinds": "アクキー",
+    "unit": "マーガレット",
+    "price": 500
+  },
+  {
+    "booth": "お62b",
+    "kinds": "アクキー",
+    "unit": "ピターニア",
+    "price": 500
+  },
+  {
+    "booth": "お62b",
+    "kinds": "アクキー",
+    "unit": "サローディア",
+    "price": 500
+  },
+  {
+    "booth": "お62b",
+    "kinds": "シール",
+    "unit": "トト",
+    "price": 300
+  },
+  {
+    "booth": "お62b",
+    "kinds": "マグネット",
+    "price": 300
+  },
+  {
+    "booth": "お62b",
+    "kinds": "アクスタ",
+    "unit": "メルク",
+    "price": 1200
+  },
+  {
+    "booth": "お62b",
+    "kinds": "アクスタ",
+    "unit": "ユウ,メルク,トト",
+    "price": 1200
+  },
+  {
+    "booth": "お62b",
+    "kinds": "アクスタ",
+    "unit": "ピスミシェ",
+    "price": 1200
+  },
+  {
     "booth": "お63b",
     "tag": "new",
     "kinds": "モノクロ本",
