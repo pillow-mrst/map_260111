@@ -159,7 +159,8 @@ $('#output').on('click', '.mark', function () {
 // ブースをクリック
 $('.tbl').on('click', '.booth, .another', function () {
 
-  const deskNumber = $(this).prop('id');
+  const $this_path = $(this);
+  const deskNumber = $this_path.prop('id');
   // booth に該当するデータを取得
   const matchedBooths = circle_arr.filter(circle => circle.place.includes(deskNumber));
   // ラベル（机の右側の番号）を抽出
@@ -167,15 +168,16 @@ $('.tbl').on('click', '.booth, .another', function () {
   // 対応する DOM 要素を取得
   const $deskElements = seatLabels.map(lb => $('#' + lb));
 
+  $('#menu_img').attr('src', './');
   // 一旦全て非表示
   $('#ab, #a, #b').hide();
-  $('#menu_img').attr('src', './');
+  $('.booth, .another').removeClass('touch');
+  $this_path.addClass('touch');
 
   // 各 booth の情報を反映
   for (let i = 0; i < seatLabels.length; i++) {
 
     const boothData = matchedBooths[i];
-    console.log(boothData)
     const $deskElement = $deskElements[i];
 
     const hallCode = boothData.place.slice(0, 3);
@@ -214,7 +216,6 @@ $('.tbl').on('click', '.booth, .another', function () {
 
 // お品書きをクリック
 $('.club').on('click', '.menu', function () {
-
   // --- booth 抽出 ---
   const placeText = $(this).closest('.club').find('.place').text();
   const booth = placeText
@@ -428,12 +429,50 @@ $('#goods_list').on('change', '.buy_num', function () {
  calcTotalDisp();
 });
 
-
+/*
 $('.popup').magnificPopup({
   type: 'inline',
   mainClass: 'mfp-fade', //フェードインアウトについてクラスを設定
   removalDelay: 100, //ポップアップが閉じるときの遅延時間を設定
 });
+*/
+
+$('.popup').on('click', function(e) {
+  e.preventDefault();
+
+  const target = $(this).attr('href'); // #inline-menu
+  const $popup = $(target);
+  const $img = $popup.find('#menu_img');
+  const $spinner = $popup.find('.spinner');
+
+  // スピナー表示、画像は隠す
+  $spinner.show();
+  $img.hide();
+
+  // 画像ロード完了後にポップアップを開く
+  function openPopup() {
+    $.magnificPopup.open({
+      items: { src: target },
+      type: 'inline',
+      mainClass: 'mfp-fade',
+      removalDelay: 100,
+      callbacks: {
+        open: function() {
+          $spinner.hide();
+          $img.show();
+        }
+      }
+    });
+  }
+
+  // 画像がキャッシュ済みなら即 open
+  if ($img[0].complete) {
+    openPopup();
+  } else {
+    $img.one('load', openPopup);
+  }
+});
+
 // 閉じるボタン
 $('.close').on('click', function (e) {
   e.preventDefault();
