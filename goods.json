@@ -1,31 +1,5 @@
 ﻿[
   {
-    "booth": "か15a",
-    "tag": "new",
-    "kinds": "エイドキットセット",
-    "price": 2000
-  },
-  {
-    "booth": "か15a",
-    "kinds": "ピルケース",
-    "price": 700
-  },
-  {
-    "booth": "か15a",
-    "kinds": "ビニールポーチ",
-    "price": 1500
-  },
-  {
-    "booth": "か15a",
-    "kinds": "ステッカー",
-    "price": 100
-  },
-  {
-    "booth": "か15a",
-    "kinds": "シールセット",
-    "price": 500
-  },
-  {
     "booth": "あ07ab",
     "kinds": "NLセット",
     "unit": "ライアン",
@@ -200,6 +174,50 @@
     "price": 200
   },
   {
+    "booth": "あ08b",
+    "tag": "new",
+    "kinds": "カードセット",
+    "price": 300
+  },
+  {
+    "booth": "あ08b",
+    "tag": "new",
+    "kinds": "ピンバッジ",
+    "unit": "トト",
+    "price": 1200
+  },
+  {
+    "booth": "あ08b",
+    "tag": "new",
+    "kinds": "ピンバッジ",
+    "unit": "メルク",
+    "price": 1200
+  },
+  {
+    "booth": "あ08b",
+    "tag": "new",
+    "kinds": "ブランケット",
+    "price": 2500
+  },
+  {
+    "booth": "あ08b",
+    "tag": "new",
+    "kinds": "ハンカチ",
+    "price": 500
+  },
+  {
+    "booth": "あ08b",
+    "kinds": "アクキー",
+    "unit": "マーガレット",
+    "price": 700
+  },
+  {
+    "booth": "あ09ab",
+    "kinds": "12歳アンソロ",
+    "price": 3500,
+    "limit": 3
+  },
+  {
     "booth": "あ10ab",
     "tag": "新刊",
     "kinds": "イラスト本セット",
@@ -241,7 +259,8 @@
     "booth": "あ11a",
     "tag": "新刊",
     "kinds": "イラスト本セット",
-    "price": 2000
+    "price": 2000,
+    "limit": 1
   },
   {
     "booth": "あ11a",
@@ -260,6 +279,12 @@
     "booth": "あ11a",
     "kinds": "クリアしおり",
     "price": 300
+  },
+  {
+    "booth": "あ11a",
+    "kinds": "水彩色紙",
+    "price": 1000,
+    "limit": 1
   },
   {
     "booth": "あ11b",
@@ -284,6 +309,37 @@
     "tag": "既刊",
     "kinds": "イラスト集",
     "price": 1000
+  },
+  {
+    "booth": "お47b",
+    "kinds": "キミとおそろい",
+    "price": 500
+  },
+  {
+    "booth": "お47b",
+    "kinds": "はじめてのおつかい",
+    "price": 500
+  },
+  {
+    "booth": "お47b",
+    "tag": "R18",
+    "kinds": "小説",
+    "price": 500
+  },
+  {
+    "booth": "お47b",
+    "kinds": "空の心と旅の雫",
+    "price": 500
+  },
+  {
+    "booth": "お47b",
+    "kinds": "名探偵ピーター",
+    "price": 500
+  },
+  {
+    "booth": "お47b",
+    "kinds": "プロフェッショナル",
+    "price": 300
   },
   {
     "booth": "お48a",
@@ -337,6 +393,18 @@
     "price": 600
   },
   {
+    "booth": "お49a",
+    "tag": "新刊",
+    "kinds": "小説",
+    "price": 200
+  },
+  {
+    "booth": "お49a",
+    "tag": "既刊",
+    "kinds": "小説",
+    "price": 300
+  },
+  {
     "booth": "お49b",
     "tag": "新刊",
     "kinds": "本",
@@ -347,6 +415,91 @@
     "tag": "既刊",
     "kinds": "本",
     "price": 400
+  },
+  {
+    "booth": "お50a",
+    "tag": "R18新刊",
+    "kinds": "漫画",
+    "price": 600
+  },
+  {
+    "booth": "お50a",
+    "tag": "新刊",
+    "kinds": "漫画",
+    "price": 500
+  },
+  {
+    "booth": "お50a",
+    "tag": "new",
+    "kinds": "アクキー",
+    "unit": "リュナ",
+    "price": 500
+  },
+  {
+    "booth": "お50a",
+    "tag": "new",
+    "kinds": "アクキー",
+    "unit": "リュカ",
+    "price": 500
+  },
+  {
+    "booth": "お50a",
+    "tag": "既刊",
+    "kinds": "漫画",
+    "price": 500
+  },
+  {
+    "booth": "お50a",
+    "tag": "既刊",
+    "kinds": "漫画",
+    "price": 600
+  },
+  {
+    "booth": "お51ab",
+    "tag": "新刊",
+    "kinds": "セット",
+    "price": 1000
+  },
+  {
+    "booth": "お51ab",
+    "tag": "新刊",
+    "kinds": "単品",
+    "price": 500
+  },
+  {
+    "booth": "お51ab",
+    "tag": "new",
+    "kinds": "アクリルブロック",
+    "price": 800
+  },
+  {
+    "booth": "お51ab",
+    "tag": "new",
+    "kinds": "回転アクスタ",
+    "price": 800
+  },
+  {
+    "booth": "お51ab",
+    "tag": "既刊",
+    "kinds": "漫画",
+    "price": 500
+  },
+  {
+    "booth": "お51ab",
+    "tag": "委託",
+    "kinds": "レターセット",
+    "price": 500
+  },
+  {
+    "booth": "お51ab",
+    "tag": "委託",
+    "kinds": "便箋セット",
+    "price": 300
+  },
+  {
+    "booth": "お51ab",
+    "kinds": "ウェディングセット",
+    "price": 4000
   },
   {
     "booth": "お54b",
@@ -1048,6 +1201,32 @@
     "kinds": "アクキー",
     "unit": "メルク",
     "price": 700
+  },
+  {
+    "booth": "か15a",
+    "tag": "new",
+    "kinds": "エイドキットセット",
+    "price": 2000
+  },
+  {
+    "booth": "か15a",
+    "kinds": "ピルケース",
+    "price": 700
+  },
+  {
+    "booth": "か15a",
+    "kinds": "ビニールポーチ",
+    "price": 1500
+  },
+  {
+    "booth": "か15a",
+    "kinds": "ステッカー",
+    "price": 100
+  },
+  {
+    "booth": "か15a",
+    "kinds": "シールセット",
+    "price": 500
   },
   {
     "booth": "か17a",
