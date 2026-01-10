@@ -25,7 +25,7 @@
     "name": "レヒトの帽子",
     "master": "らむね",
     "xurl": "https://x.com/search?q=from%3Aigarashi_tea%20or%20from%3Am_12thanthology%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
-    "menu": 1
+    "menu": 3
   },
   {
     "place": "1号館あ10ab",
@@ -122,8 +122,8 @@
     "place": "1号館お53a",
     "name": "すいめんみなも",
     "master": "らこめ",
-    "xurl": "https://x.com/search?q=from%3Arakorakome%20filter%3Alinks&src=typed_query&f=live",
-    "menu": 0
+    "xurl": "https://x.com/search?q=from%3Arakorakome%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
+    "menu": 1
   },
   {
     "place": "1号館お53b",
@@ -248,8 +248,8 @@
     "place": "1号館お64a",
     "name": "じゃがいもの湯",
     "master": "ゆなこ",
-    "xurl": "https://x.com/search?q=from%3A136yu%20filter%3Alinks&src=typed_query&f=live",
-    "menu": 0
+    "xurl": "https://x.com/search?q=from%3A136yu%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
+    "menu": 1
   },
   {
     "place": "1号館お64b",
@@ -262,7 +262,7 @@
     "place": "1号館か01a",
     "name": "ましゅまろうぉーず",
     "master": "たかみん／りんと",
-    "xurl": "https://x.com/search?q=from%3Ar_takamine%20or%20from%3Ammm_mrst%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
+    "xurl": "https://x.com/search?q=from%3Ar_takamine%20or%20from%3Ammm_mrst%20or%20from%3Aayame_1577%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
     "menu": 1
   },
   {
@@ -312,7 +312,7 @@
     "name": "月飴屋",
     "master": "べっこう飴",
     "xurl": "https://x.com/search?q=from%3Aveccoame_02%20or%20from%3Amondayo__%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
-    "menu": 1
+    "menu": 2
   },
   {
     "place": "1号館か05a",
@@ -423,8 +423,8 @@
     "place": "1号館か14b",
     "name": "hiemalis",
     "master": "ラルゴ",
-    "xurl": "https://x.com/search?q=from%3Ararugo512%20filter%3Alinks&src=typed_query&f=live",
-    "menu": 0
+    "xurl": "https://x.com/search?q=from%3Ararugo512%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
+    "menu": 1
   },
   {
     "place": "1号館か15a",
@@ -438,6 +438,13 @@
     "name": "シオコブジェット",
     "master": "けやき",
     "xurl": "https://x.com/search?q=from%3Azlkv_k%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
+    "menu": 1
+  },
+  {
+    "place": "1号館か16a",
+    "name": "わいるど！すぴぃど2",
+    "master": "たろうのすけ",
+    "xurl": "https://x.com/search?q=from%3Aborn3kesan%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
     "menu": 1
   },
   {
@@ -466,13 +473,6 @@
     "name": "四の五の才六亭",
     "master": "鴫浦",
     "xurl": "https://x.com/search?q=from%3Ashigmasa_g%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
-    "menu": 1
-  },
-  {
-    "place": "1号館か16a",
-    "name": "わいるど！すぴぃど2",
-    "master": "たろうのすけ",
-    "xurl": "https://x.com/search?q=from%3Aborn3kesan%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
     "menu": 1
   }
 ]

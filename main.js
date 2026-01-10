@@ -175,6 +175,7 @@ $('.tbl').on('click', '.booth, .another', function () {
   for (let i = 0; i < seatLabels.length; i++) {
 
     const boothData = matchedBooths[i];
+    console.log(boothData)
     const $deskElement = $deskElements[i];
 
     const hallCode = boothData.place.slice(0, 3);
