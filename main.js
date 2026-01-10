@@ -168,7 +168,7 @@ $('.tbl').on('click', '.booth, .another', function () {
   // 対応する DOM 要素を取得
   const $deskElements = seatLabels.map(lb => $('#' + lb));
 
-  $('#menu_img').attr('src', './');
+  //$('#menu_img').attr('src', './');
   // 一旦全て非表示
   $('#ab, #a, #b').hide();
   $('.booth, .another').removeClass('touch');
@@ -215,16 +215,14 @@ $('.tbl').on('click', '.booth, .another', function () {
 });
 
 // お品書きをクリック
-$('.club').on('click', '.menu', function () {
+$('.menu').on('click', function (e) {
+  e.preventDefault();
+
   // --- booth 抽出 ---
   const placeText = $(this).closest('.club').find('.place').text();
   const booth = placeText
     .slice(placeText.indexOf(' ') + 1, placeText.indexOf(')'))
     .replace('-', '');
-
-  // --- 画像切り替え ---
-  const imgUrl = `./img_webp/${booth}_menu1.webp`;
-  $('#menu_img').attr('src', imgUrl);
 
   // --- ページ情報更新 ---
   const $pages = $('#pages');
@@ -236,9 +234,42 @@ $('.club').on('click', '.menu', function () {
   const pageMax = circle_arr.find(c => c.place.slice(3) === booth)?.menu ?? 1;
   $pageAll.text(pageMax);
 
-  // --- ページ送りボタンの表示/非表示 ---
   const $navButtons = $pages.children('.back, .go');
   pageMax > 1 ? $navButtons.show() : $navButtons.hide();
+
+  // --- 画像切り替え ---
+  const imgUrl = `./img_webp/${booth}_menu1.webp`;
+  const $img = $('#menu_img');
+  const $spinner = $('.spinner');
+  const target = $(this).attr('href'); // #inline-menu
+
+  // スピナー表示、画像は隠す
+  $spinner.show();
+  $img.hide();
+
+  // ポップアップを開く関数（load の外に置く）
+  function openPopup() {
+    $.magnificPopup.open({
+      items: { src: target },
+      type: 'inline',
+      mainClass: 'mfp-fade',
+      removalDelay: 100,
+      callbacks: {
+        open: function () {
+          $spinner.hide();
+          $img.show();
+        }
+      }
+    });
+  }
+
+  // まず load を設定してから src を変える
+  $img.off('load').one('load', function () {
+    openPopup();   // ← これが必要
+  });
+
+  // キャッシュ対策
+  $img.attr('src', imgUrl + '?v=' + Date.now());
 });
 
 // 次ページに進む
@@ -426,16 +457,16 @@ $('#goods_list').on('change', '.buy_num', function () {
   }
   $('#total').children('.payment').text(total);
   */
- calcTotalDisp();
+  calcTotalDisp();
 });
 
 
-$('.popup').magnificPopup({
+//$('.popup').magnificPopup({
+$('.list').magnificPopup({
   type: 'inline',
   mainClass: 'mfp-fade', //フェードインアウトについてクラスを設定
   removalDelay: 100, //ポップアップが閉じるときの遅延時間を設定
 });
-
 
 // 閉じるボタン
 $('.close').on('click', function (e) {
