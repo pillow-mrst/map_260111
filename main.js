@@ -429,49 +429,13 @@ $('#goods_list').on('change', '.buy_num', function () {
  calcTotalDisp();
 });
 
-/*
+
 $('.popup').magnificPopup({
   type: 'inline',
   mainClass: 'mfp-fade', //フェードインアウトについてクラスを設定
   removalDelay: 100, //ポップアップが閉じるときの遅延時間を設定
 });
-*/
 
-$('.popup').on('click', function(e) {
-  e.preventDefault();
-
-  const target = $(this).attr('href'); // #inline-menu
-  const $popup = $(target);
-  const $img = $popup.find('#menu_img');
-  const $spinner = $popup.find('.spinner');
-
-  // スピナー表示、画像は隠す
-  $spinner.show();
-  $img.hide();
-
-  // 画像ロード完了後にポップアップを開く
-  function openPopup() {
-    $.magnificPopup.open({
-      items: { src: target },
-      type: 'inline',
-      mainClass: 'mfp-fade',
-      removalDelay: 100,
-      callbacks: {
-        open: function() {
-          $spinner.hide();
-          $img.show();
-        }
-      }
-    });
-  }
-
-  // 画像がキャッシュ済みなら即 open
-  if ($img[0].complete) {
-    openPopup();
-  } else {
-    $img.one('load', openPopup);
-  }
-});
 
 // 閉じるボタン
 $('.close').on('click', function (e) {
