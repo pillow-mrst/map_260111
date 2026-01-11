@@ -263,7 +263,7 @@
     "name": "ましゅまろうぉーず",
     "master": "たかみん／りんと",
     "xurl": "https://x.com/search?q=from%3Ar_takamine%20or%20from%3Ammm_mrst%20or%20from%3Aayame_1577%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
-    "menu": 1
+    "menu": 2
   },
   {
     "place": "1号館か01b",
@@ -284,7 +284,7 @@
     "name": "(株)どくだみりんご",
     "master": "かいちょお",
     "xurl": "https://x.com/search?q=from%3Afukukaichoosan%20or%20from%3Awakamewakewake%20or%20from%3A2Mimoka%20or%20from%3Apometama%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
-    "menu": 0
+    "menu": 2
   },
   {
     "place": "1号館か03a",
@@ -360,8 +360,8 @@
     "place": "1号館か09ab",
     "name": "ぜぇ変奏曲",
     "master": "めしねえ",
-    "xurl": "https://x.com/search?q=from%3Anushimee%20or%20from%3Amrst_sabaku_%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
-    "menu": 1
+    "xurl": "https://x.com/search?q=from%3Anushimee%20or%20from%3Amrst_sabaku_%20or%20from%3ASanuki_24%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
+    "menu": 2
   },
   {
     "place": "1号館か10a",
@@ -473,6 +473,13 @@
     "name": "四の五の才六亭",
     "master": "鴫浦",
     "xurl": "https://x.com/search?q=from%3Ashigmasa_g%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
+    "menu": 1
+  },
+  {
+    "place": "1号館か11b",
+    "name": "棚浜屋",
+    "master": "伊織",
+    "xurl": "https://x.com/search?q=from%3AIoriOri_mrst%20%23メルぱらRe3頒布物%20or%20%23メルぱらRe3&src=typed_query&f=live",
     "menu": 1
   }
 ]
